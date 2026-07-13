@@ -6,34 +6,25 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Internship Worklog
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+During my **12-week internship**, I recorded my weekly learning progress, completed hands-on AWS laboratories, participated in technical events, and developed an **Event Management and Registration System** on AWS.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+Each worklog summarizes the objectives, completed tasks, achievements, challenges encountered, and lessons learned throughout the internship. The worklog demonstrates not only the technical skills acquired but also the practical experience gained in designing, deploying, monitoring, and maintaining cloud-based applications using AWS services.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+The internship journey covered topics ranging from fundamental AWS services to containerization, cloud architecture, DevOps practices, and project implementation.
 
-**Week 2:** [Doing task A...](1.2-week2/)
+The weekly worklogs are organized as follows:
 
-**Week 3:** [Doing task B...](1.3-week3/)
-
-**Week 4:** [Doing task C...](1.4-week4/)
-
-**Week 5:** [Doing task D...](1.5-week5/)
-
-**Week 6:** [Doing task E...](1.6-week6/)
-
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+- **Week 1:** [AWS Internship Orientation and AWS Fundamentals](1.1-week1/)
+- **Week 2:** [Amazon EC2, Amazon RDS, Auto Scaling, and CloudWatch Labs](1.2-week2/)
+- **Week 3:** [Completing AWS Labs and Participating in FCAJ Community Day](1.3-week3/)
+- **Week 4:** [Amazon Route 53, AWS CloudFormation, and CloudWatch Monitoring](1.4-week4/)
+- **Week 5:** [Amazon EC2 Windows, AWS CLI, Amazon SNS, and Troubleshooting](1.5-week5/)
+- **Week 6:** [Docker Fundamentals, Docker Hub, Amazon ECR, and VM Import/Export](1.6-week6/)
+- **Week 7:** [Amazon ECS, AWS Fargate, Application Load Balancer, and Blue/Green Deployment](1.7-week7/)
+- **Week 8:** [Project Analysis, AWS Architecture Design, and Development Planning](1.8-week8/)
+- **Week 9:** [Project Infrastructure Deployment and Initial Application Development](1.9-week9/)
+- **Week 10:** [System Development, Testing, Optimization, and AWS Monitoring](1.10-week10/)
+- **Week 11:** [Project Completion, Documentation, and Final Presentation Preparation](1.11-week11/)
+- **Week 12:** [Project Demonstration, Final Report Submission, and Internship Summary](1.12-week12/)

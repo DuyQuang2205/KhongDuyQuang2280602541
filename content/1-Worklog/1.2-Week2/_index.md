@@ -1,57 +1,89 @@
 ---
 title: "Week 2 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+## Week 2 Objectives
 
-### Week 2 Objectives:
+* Complete Lab04, Lab05, and Lab06.
+* Understand how to deploy a web application on AWS.
+* Learn the basic concept of multi-tier architecture.
+* Understand Elastic Load Balancer and traffic distribution.
+* Learn how Auto Scaling Group works.
+* Practice deploying Amazon RDS.
+* Understand how to connect EC2 instances with Amazon RDS.
+* Get familiar with Amazon CloudWatch for basic resource monitoring.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Review the knowledge learned in Week 1.<br>- Start Lab04.<br>- Learn the basic architecture of deploying a web application on AWS.<br>- Review VPC, Public Subnet, and Security Group concepts. | 27/04/2026 | 27/04/2026 | AWS Study Group Lab04 |
+| Tuesday | - Continue Lab04.<br>- Launch an EC2 instance.<br>- Configure Security Group rules.<br>- Practice connecting to EC2 through SSH. | 28/04/2026 | 28/04/2026 | AWS EC2 Documentation |
+| Wednesday | - Complete Lab05.<br>- Learn about Amazon RDS.<br>- Create a MySQL database on Amazon RDS.<br>- Connect the EC2 instance to the RDS database and test the connection. | 29/04/2026 | 30/04/2026 | AWS RDS Documentation |
+| Friday | - Start Lab06.<br>- Learn about Application Load Balancer.<br>- Configure Auto Scaling Group.<br>- Create a Launch Template for EC2 instances. | 01/05/2026 | 02/05/2026 | AWS Auto Scaling Documentation |
+| Sunday | - Test Auto Scaling behavior.<br>- Monitor EC2 resources with Amazon CloudWatch.<br>- Review all implementation steps and complete Lab04, Lab05, and Lab06. | 03/05/2026 | 03/05/2026 | AWS CloudWatch Documentation |
 
-### Week 2 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully completed Lab04, Lab05, and Lab06 according to the Bootcamp schedule.
+* Understood the basic architecture of deploying a web application on AWS.
+* Practiced important EC2 operations, including:
+  * Launching an EC2 instance.
+  * Configuring Security Groups.
+  * Connecting to EC2 using SSH.
+  * Managing Key Pairs.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learned how to deploy and use Amazon RDS, including:
+  * Creating a MySQL database.
+  * Configuring the database Security Group.
+  * Connecting EC2 to RDS.
+  * Testing database connectivity.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the basic operation of Elastic Load Balancer, including:
+  * Traffic distribution.
+  * Health Checks.
+  * Target Groups.
+  * High Availability.
 
-* Used AWS CLI to perform basic operations such as:
+* Learned the key components of Auto Scaling Group:
+  * Launch Template.
+  * Desired Capacity.
+  * Minimum Capacity.
+  * Maximum Capacity.
+  * Scaling policies.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Practiced monitoring AWS resources using Amazon CloudWatch:
+  * CPU Utilization.
+  * Network traffic.
+  * EC2 instance status.
+  * Basic monitoring metrics.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gained a better understanding of how multiple AWS services work together to build a scalable and highly available web system.
+
+---
+
+## Challenges Encountered
+
+* At first, it was difficult to understand the relationship between VPC, Subnet, Route Table, and Security Group.
+* The connection between EC2 and Amazon RDS failed at first because the MySQL port 3306 was not properly configured in the Security Group.
+* Auto Scaling Group concepts such as Desired Capacity, Minimum Size, and Maximum Size required additional time to understand clearly.
+* Reading and interpreting CloudWatch metrics was still challenging in the beginning.
+
+---
+
+## Lessons Learned
+
+* Before deploying a system, it is important to draw or review the architecture diagram to understand how AWS services connect with each other.
+* Security Groups play a critical role in AWS networking and should always be checked carefully when troubleshooting connection issues.
+* Amazon RDS should be placed in a Private Subnet in real-world production environments for better security.
+* Elastic Load Balancer and Auto Scaling Group are important components for building scalable and highly available systems.
+* Amazon CloudWatch is useful for monitoring system performance and detecting issues early.
+* Writing notes after each lab helps improve understanding and makes it easier to apply the knowledge to real projects.

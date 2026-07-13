@@ -1,59 +1,73 @@
 ---
-title: "Worklog Tuần 8"
+title: "Week 8 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 8:
+## Mục tiêu tuần 8
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Phân tích yêu cầu của đề tài thực tập.
+* Xác định phạm vi và chức năng của hệ thống.
+* Thiết kế kiến trúc tổng thể của dự án trên AWS.
+* Lựa chọn các dịch vụ AWS phù hợp với yêu cầu hệ thống.
+* Chuẩn bị môi trường phát triển và triển khai dự án.
+* Xây dựng kế hoạch triển khai cho các tuần tiếp theo.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Công việc thực hiện trong tuần
 
-### Kết quả đạt được tuần 8:
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|--------------------|
+| Thứ 2 | - Phân tích yêu cầu của đề tài thực tập.<br>- Xác định các chức năng chính của hệ thống.<br>- Thảo luận với Mentor về phạm vi dự án. | 08/06/2026 | 08/06/2026 | Internship Requirement |
+| Thứ 3 | - Thiết kế kiến trúc tổng thể.<br>- Xác định các thành phần Frontend, Backend và Database.<br>- Phân tích luồng dữ liệu của hệ thống. | 09/06/2026 | 09/06/2026 | AWS Well-Architected Framework |
+| Thứ 4 | - Lựa chọn các dịch vụ AWS phù hợp.<br>- Xây dựng sơ đồ kiến trúc trên AWS.<br>- Phân tích các yêu cầu về bảo mật và khả năng mở rộng. | 10/06/2026 | 10/06/2026 | AWS Architecture Center |
+| Thứ 5 | - Chuẩn bị môi trường phát triển.<br>- Khởi tạo Source Code Repository.<br>- Cấu hình các công cụ hỗ trợ phát triển. | 11/06/2026 | 11/06/2026 | GitHub, VS Code |
+| Thứ 6 | - Thiết kế cơ sở dữ liệu.<br>- Xây dựng danh sách API dự kiến.<br>- Chuẩn bị tài liệu kỹ thuật ban đầu. | 12/06/2026 | 13/06/2026 | Project Design Documents |
+| Chủ nhật | - Tổng hợp kết quả phân tích.<br>- Hoàn thiện tài liệu thiết kế ban đầu.<br>- Lập kế hoạch triển khai cho tuần tiếp theo. | 14/06/2026 | 14/06/2026 | AWS Study Group |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Kết quả đạt được
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thành quá trình phân tích yêu cầu của đề tài thực tập.
+* Xác định rõ phạm vi và các chức năng chính của hệ thống.
+* Xây dựng kiến trúc tổng thể của dự án trên nền tảng AWS.
+* Lựa chọn các dịch vụ AWS phù hợp với từng thành phần của hệ thống, bao gồm:
+  * Amazon EC2.
+  * Amazon RDS.
+  * Amazon S3.
+  * Amazon CloudFront.
+  * Application Load Balancer.
+  * Amazon Route 53.
+  * AWS IAM.
+  * Amazon CloudWatch.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành sơ đồ kiến trúc ban đầu của hệ thống.
+* Thiết kế cơ sở dữ liệu và xác định các thực thể chính.
+* Chuẩn bị Source Code Repository và môi trường phát triển.
+* Xây dựng kế hoạch triển khai dự án cho các tuần tiếp theo.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+---
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+## Khó khăn gặp phải
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Việc xác định phạm vi dự án cần cân nhắc giữa yêu cầu thực tế và thời gian thực hiện.
+* Ban đầu còn gặp khó khăn trong việc lựa chọn dịch vụ AWS phù hợp cho từng thành phần.
+* Thiết kế kiến trúc cần đảm bảo cân bằng giữa hiệu năng, bảo mật và chi phí.
+* Việc xây dựng sơ đồ kiến trúc yêu cầu tổng hợp nhiều kiến thức đã học trong các tuần trước.
 
+---
 
+## Kinh nghiệm rút ra
+
+* Phân tích yêu cầu kỹ càng giúp giảm sai sót trong giai đoạn phát triển.
+* Thiết kế kiến trúc trước khi bắt đầu lập trình giúp triển khai dự án hiệu quả hơn.
+* Việc lựa chọn đúng dịch vụ AWS ngay từ đầu giúp hệ thống dễ mở rộng và dễ bảo trì.
+* Chuẩn bị đầy đủ tài liệu thiết kế giúp các thành viên trong nhóm dễ dàng trao đổi và phối hợp.
+* Một kế hoạch triển khai rõ ràng giúp kiểm soát tiến độ và hạn chế phát sinh trong quá trình thực hiện.
+
+---

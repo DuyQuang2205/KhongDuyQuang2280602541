@@ -1,59 +1,61 @@
 ---
-title: "Worklog Tuần 11"
+title: "Week 11 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+## Mục tiêu tuần 11
 
-### Mục tiêu tuần 11:
+* Hoàn thiện toàn bộ dự án thực tập.
+* Kiểm thử và sửa các lỗi còn tồn đọng.
+* Hoàn thiện tài liệu kỹ thuật và báo cáo thực tập.
+* Chuẩn bị Demo và trình bày dự án.
+* Tổng kết các kiến thức và kinh nghiệm đã học trong quá trình thực tập.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|--------------------|
+| Thứ 2 | - Rà soát toàn bộ mã nguồn.<br>- Kiểm tra lại kiến trúc hệ thống.<br>- Hoàn thiện các chức năng còn thiếu. | 29/06/2026 | 29/06/2026 | Project Documentation |
+| Thứ 3 | - Thực hiện kiểm thử cuối cùng.<br>- Sửa các lỗi phát sinh trong quá trình kiểm thử.<br>- Đánh giá hiệu năng hệ thống. | 30/06/2026 | 30/06/2026 | Testing Documentation |
+| Thứ 4 | - Hoàn thiện tài liệu kỹ thuật.<br>- Cập nhật sơ đồ kiến trúc AWS.<br>- Hoàn thành tài liệu hướng dẫn triển khai hệ thống. | 01/07/2026 | 01/07/2026 | AWS Architecture Center |
+| Thứ 5 | - Viết báo cáo thực tập song ngữ.<br>- Hoàn thiện Proposal, Worklog và Blog.<br>- Chuẩn bị Slide trình bày. | 02/07/2026 | 03/07/2026 | Internship Report Template |
+| Thứ 6 | - Demo dự án với Mentor.<br>- Nhận góp ý và chỉnh sửa hệ thống.<br>- Cập nhật tài liệu theo phản hồi. | 04/07/2026 | 04/07/2026 | Mentor Feedback |
+| Chủ nhật | - Tổng kết toàn bộ quá trình thực tập.<br>- Hoàn thiện báo cáo cuối cùng.<br>- Chuẩn bị nộp báo cáo và các tài liệu liên quan. | 05/07/2026 | 05/07/2026 | Internship Documentation |
 
-### Kết quả đạt được tuần 11:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thiện dự án **Event Management & Registration System**.
+* Kiểm thử và khắc phục các lỗi còn tồn đọng.
+* Hoàn thiện toàn bộ các chức năng chính của hệ thống.
+* Hoàn thành tài liệu triển khai và tài liệu kỹ thuật.
+* Hoàn thành báo cáo thực tập bằng tiếng Việt và tiếng Anh.
+* Hoàn thiện Proposal, Worklog và các bài Blog theo yêu cầu của chương trình thực tập.
+* Chuẩn bị Slide trình bày và Demo hệ thống.
+* Tiếp thu góp ý từ Mentor và cập nhật hệ thống trước khi nộp báo cáo.
+* Tổng hợp đầy đủ các kiến thức, kỹ năng và kinh nghiệm đã học trong suốt thời gian thực tập.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Khó khăn gặp phải
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Việc rà soát toàn bộ hệ thống mất khá nhiều thời gian do cần kiểm tra cả chức năng và tài liệu.
+* Một số lỗi nhỏ chỉ xuất hiện trong quá trình kiểm thử cuối cùng.
+* Việc hoàn thiện báo cáo song ngữ yêu cầu nhiều thời gian để đảm bảo nội dung thống nhất giữa hai ngôn ngữ.
+* Cần cân đối thời gian giữa việc hoàn thiện dự án và chuẩn bị tài liệu báo cáo.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Kinh nghiệm rút ra
 
-
+* Việc cập nhật tài liệu trong suốt quá trình phát triển giúp giảm đáng kể khối lượng công việc ở giai đoạn cuối.
+* Kiểm thử nhiều lần trước khi Demo giúp hệ thống hoạt động ổn định và giảm rủi ro khi trình bày.
+* Báo cáo kỹ thuật cần phản ánh đúng quá trình thực hiện và những gì đã học được, không chỉ mô tả kết quả cuối cùng.
+* Quản lý thời gian hợp lý giữa phát triển, kiểm thử và viết tài liệu là yếu tố quan trọng để hoàn thành dự án đúng tiến độ.
+* Chương trình thực tập giúp củng cố kiến thức về AWS, Docker, Cloud Computing và quy trình triển khai một hệ thống thực tế trên nền tảng Cloud.

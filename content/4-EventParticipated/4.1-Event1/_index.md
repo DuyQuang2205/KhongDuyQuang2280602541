@@ -6,121 +6,256 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# FCAJ Community Day (May 9, 2026) Event Report
 
-### Event Objectives
+## Purpose of the Event
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The event was organized to share practical knowledge and professional experiences for students and software developers. The main objectives included:
 
-### Speakers
+- Introducing effective learning strategies.
+- Helping participants build long-term learning habits.
+- Sharing professional mindset for software engineers.
+- Demonstrating how Artificial Intelligence can support software development.
+- Encouraging developers to use AI effectively while maintaining software quality.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+---
 
-### Key Highlights
+## Main Topics
 
-#### Identifying the drawbacks of legacy application architecture
+The event consisted of two major sessions:
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+1. Brain Hacks for Effective Learning
+2. Professional Mindset and AI-assisted Software Development
 
-#### Transitioning to modern application architecture – Microservices
+---
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+# Part 1: Brain Hacks for Effective Learning
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+The first session focused on how people can make learning more enjoyable and sustainable by understanding how the brain works.
 
-#### Domain-Driven Design (DDD)
+## Understanding Dopamine
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+One of the key ideas presented was that dopamine is not only released after receiving a reward, but also during the anticipation of a reward.
 
-#### Event-Driven Architecture
+Therefore, learners should create small rewards throughout the learning process.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+For example:
 
-#### Compute Evolution
+- Take a short break after studying for 30 minutes.
+- Reward yourself after completing a lesson.
+- Celebrate weekly learning achievements.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+These small rewards help maintain motivation and make studying feel less stressful.
 
-#### Amazon Q Developer
+---
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+## Using Fear to Build Habits
 
-### Key Takeaways
+Another interesting concept was using the fear of breaking a learning streak.
 
-#### Design Mindset
+Applications such as Duolingo encourage users to continue learning every day by maintaining their streaks.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+The same idea can be applied to studying by keeping a daily learning record. Once a streak is established, people naturally become more motivated to continue.
 
-#### Technical Architecture
+---
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+## Breaking Large Goals into Smaller Tasks
 
-#### Modernization Strategy
+Many learners feel overwhelmed because they focus on large goals.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+Instead of trying to master an entire technology at once, the speaker recommended dividing the learning process into small tasks that require only 10 to 30 minutes.
 
-### Applying to Work
+Examples include:
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Learning one concept.
+- Watching a short tutorial.
+- Completing a small coding exercise.
+- Writing personal notes.
 
-### Event Experience
+Small achievements make it easier to start learning and reduce procrastination.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+---
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+## Creating a Better Learning Environment
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+The speaker also emphasized the importance of having a suitable learning environment.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+A clean and organized workspace helps reduce distractions and improve concentration.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+Simple actions such as organizing the desk, preparing study materials, and minimizing interruptions can significantly improve learning efficiency.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+---
 
-#### Some event photos
-*Add your event photos here*  
+# Part 2: Professional Mindset and AI-assisted Software Development
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+The second session focused on the mindset required for students and junior software engineers.
+
+## Problem-solving Mindset
+
+Rather than focusing only on results, developers should always understand the reason behind every task.
+
+Instead of asking only "How?", developers should also ask:
+
+- Why is this feature needed?
+- What problem are we solving?
+- Is there a better solution?
+- Does this solution provide value to users?
+
+Understanding the "Why" leads to better decision-making and stronger software design.
+
+---
+
+## Learning from Mistakes
+
+Making mistakes is a natural part of learning and software development.
+
+Instead of avoiding failure, developers should analyze their mistakes, understand the causes, and continuously improve.
+
+Debugging and problem solving are valuable skills that grow through experience.
+
+---
+
+## Integrity
+
+One of the most valuable lessons was the importance of **Integrity**.
+
+Integrity means doing the right thing even when nobody is watching.
+
+A responsible developer always completes tasks carefully, maintains code quality, and fulfills commitments regardless of supervision.
+
+This mindset builds long-term trust and professional reputation.
+
+---
+
+# BM Method for AI-assisted Software Development
+
+The event also introduced the **BM Method**, a structured software development approach that uses Artificial Intelligence effectively.
+
+Rather than relying on random prompts, the method emphasizes planning before implementation.
+
+---
+
+## Planning Before Coding
+
+Before asking AI to generate code, developers should prepare proper documentation, including:
+
+- Software requirements
+- Functional specifications
+- System architecture
+- User stories
+- Development standards
+
+Well-prepared documentation enables AI to generate higher-quality results.
+
+---
+
+## Breaking Tasks into Smaller Units
+
+Instead of asking AI to build an entire application, developers should divide the project into smaller tasks.
+
+Examples include:
+
+- Designing the database
+- Building the login API
+- Creating the registration page
+- Implementing validation logic
+- Writing unit tests
+
+Smaller tasks reduce AI hallucinations and improve output quality.
+
+---
+
+## Multi-role Development Process
+
+The BM Method models the collaboration of different software development roles, including:
+
+- Product Manager
+- System Architect
+- Developer
+- Reviewer
+
+AI can assist each role, but human developers remain responsible for reviewing and validating the final product.
+
+---
+
+# Key Takeaways
+
+## Learning
+
+- Motivation can be maintained by creating small rewards.
+- Large goals should be divided into smaller achievable tasks.
+- Building a daily learning streak helps develop discipline.
+- A proper learning environment improves focus and productivity.
+
+---
+
+## Professional Mindset
+
+- Focus on solving problems instead of only producing results.
+- Always understand the purpose behind every task.
+- Learn continuously from mistakes.
+- Build integrity and responsibility throughout your career.
+
+---
+
+## AI-assisted Software Development
+
+- AI should be considered a development assistant rather than a replacement for developers.
+- Avoid generating software from random prompts.
+- Prepare documentation before coding.
+- Divide projects into smaller tasks for AI assistance.
+- Always review, test, and validate AI-generated code.
+
+---
+
+# Applying the Knowledge
+
+After attending the event, I plan to apply these lessons to both my studies and software projects.
+
+Examples include:
+
+- Creating a study schedule using 10–30 minute learning sessions.
+- Maintaining a daily learning streak.
+- Organizing my study environment.
+- Starting software projects with proper planning and documentation.
+- Using AI to assist with coding, debugging, and problem solving.
+- Breaking projects into smaller tasks before using AI.
+- Carefully reviewing AI-generated code before deployment.
+
+---
+
+# Event Experience
+
+Participating in the FCAJ Community Day was a valuable experience.
+
+The event provided practical knowledge not only about software development but also about learning strategies, professional mindset, and effective AI usage.
+
+## Learning Better
+
+The session on dopamine, learning habits, and goal management helped me realize that successful learning depends on building sustainable systems rather than relying only on motivation.
+
+## Professional Growth
+
+I learned that being a software engineer requires more than technical skills.
+
+Problem-solving ability, responsibility, and integrity are equally important for long-term success.
+
+## Using AI More Effectively
+
+Before attending the event, I often viewed AI mainly as a coding assistant.
+
+After the session, I understood that AI delivers much better results when developers prepare clear documentation, architecture, and well-defined tasks.
+
+## Lessons Learned
+
+The event emphasized the importance of combining:
+
+- Continuous learning
+- Self-discipline
+- Critical thinking
+- Professional integrity
+- Effective AI collaboration
+
+These qualities will help software engineers adapt to the rapidly evolving technology industry.
+---

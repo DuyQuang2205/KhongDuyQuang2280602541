@@ -6,120 +6,219 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch sự kiện FCAJ Community Day 09/05/2026
 
-### Mục Đích Của Sự Kiện
+## Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ tư duy học tập hiệu quả cho sinh viên và người mới đi làm.
+- Giúp người tham gia hiểu cách duy trì động lực học tập lâu dài.
+- Định hướng tư duy nghề nghiệp trong ngành công nghệ thông tin.
+- Giới thiệu phương pháp phát triển phần mềm với sự hỗ trợ của AI.
+- Chia sẻ cách sử dụng AI đúng cách để tăng năng suất nhưng vẫn đảm bảo chất lượng sản phẩm.
 
-### Danh Sách Diễn Giả
+## Nội Dung Chính Của Sự Kiện
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+Sự kiện gồm hai nội dung chính:
 
-### Nội Dung Nổi Bật
+1. Bí quyết giúp việc học tập trở nên hấp dẫn và dễ duy trì hơn.
+2. Tư duy nghề nghiệp và phương pháp phát triển phần mềm với AI.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+---
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+## Phần 1: Bí quyết hack não để nghiện học tập
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+Phần đầu của buổi chia sẻ tập trung vào cách biến việc học trở nên thú vị hơn, tương tự như cảm giác khi chơi game hoặc lướt mạng xã hội.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+### Hiểu cơ chế Dopamine
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+Dopamine không chỉ xuất hiện khi chúng ta nhận được phần thưởng, mà còn xuất hiện trong quá trình mong đợi phần thưởng.
 
-#### Domain-Driven Design (DDD)
+Vì vậy, để học tập hiệu quả hơn, người học nên tạo ra các phần thưởng nhỏ sau từng giai đoạn học tập. Ví dụ:
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- Hoàn thành 30 phút học thì nghỉ 5 phút.
+- Hoàn thành một bài học thì tự thưởng một hoạt động yêu thích.
+- Hoàn thành một tuần học đều đặn thì ghi nhận thành tích của bản thân.
 
-#### Event-Driven Architecture
+Cách này giúp não bộ cảm thấy việc học có phần thưởng rõ ràng, từ đó dễ duy trì động lực hơn.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### Sử dụng nỗi sợ để duy trì thói quen
 
-#### Compute Evolution
+Một ý tưởng thú vị trong phần chia sẻ là sử dụng “nỗi sợ mất chuỗi” để duy trì thói quen học tập.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+Ví dụ, các ứng dụng như Duolingo hay TikTok đều tạo cảm giác người dùng không muốn bỏ lỡ hoặc mất streak. Người học cũng có thể áp dụng cách này bằng cách tạo chuỗi học tập mỗi ngày.
 
-#### Amazon Q Developer
+Khi đã học liên tục nhiều ngày, chúng ta sẽ có xu hướng không muốn bỏ cuộc vì tiếc công sức đã xây dựng.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+### Chia nhỏ mục tiêu học tập
 
-### Những Gì Học Được
+Một sai lầm phổ biến là đặt mục tiêu quá lớn, khiến bản thân cảm thấy áp lực và dễ trì hoãn.
 
-#### Tư Duy Thiết Kế
+Thay vì nghĩ rằng phải học xong toàn bộ một công nghệ lớn, ta nên chia nhỏ thành các nhiệm vụ ngắn từ 10 đến 30 phút.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Ví dụ:
 
-#### Kiến Trúc Kỹ Thuật
+- Học một khái niệm nhỏ.
+- Xem một video ngắn.
+- Làm một bài thực hành đơn giản.
+- Ghi chú lại những gì vừa học.
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Việc chia nhỏ giúp quá trình bắt đầu dễ dàng hơn và giảm cảm giác bị quá tải.
 
-#### Chiến Lược Hiện Đại Hóa
+### Xây dựng môi trường học tập phù hợp
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+Môi trường học tập cũng ảnh hưởng rất lớn đến khả năng tập trung.
 
-### Ứng Dụng Vào Công Việc
+Một không gian học tập gọn gàng, có mục tiêu rõ ràng, ít yếu tố gây xao nhãng sẽ giúp người học duy trì kỷ luật tốt hơn.
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Việc trang trí bàn học, chuẩn bị tài liệu, sắp xếp góc làm việc cũng là một phần quan trọng giúp tạo cảm hứng học tập.
 
-### Trải nghiệm trong event
+---
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+## Phần 2: Tư duy nghề nghiệp và phát triển phần mềm với AI
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+Phần tiếp theo của sự kiện tập trung vào tư duy cần thiết cho sinh viên ngành IT, người mới đi làm và những ai đang muốn phát triển sự nghiệp trong lĩnh vực công nghệ.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+### Tư duy cốt lõi trong nghề nghiệp
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+Một trong những bài học quan trọng là không nên chỉ tập trung vào kết quả cuối cùng, mà cần chú trọng vào tư duy giải quyết vấn đề.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+Thay vì chỉ hỏi “làm như thế nào?”, người học và người đi làm nên thường xuyên đặt câu hỏi:
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Tại sao cần làm việc này?
+- Vấn đề thật sự cần giải quyết là gì?
+- Giải pháp này có phù hợp với người dùng không?
+- Có cách nào tốt hơn không?
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+Tư duy “Why” giúp chúng ta hiểu bản chất vấn đề thay vì chỉ làm theo hướng dẫn một cách máy móc.
+
+### Không ngại sai lầm
+
+Trong quá trình học tập và làm việc, mắc lỗi là điều không thể tránh khỏi.
+
+Điều quan trọng là biết nhìn lại lỗi sai, phân tích nguyên nhân và cải thiện ở những lần sau. Đặc biệt trong ngành IT, việc debug, thử nghiệm và sửa lỗi là một phần rất bình thường của quá trình phát triển.
+
+### Sự liêm chính trong công việc
+
+Một nội dung rất đáng chú ý là khái niệm **Integrity**.
+
+Integrity có thể hiểu là làm việc có trách nhiệm và đến nơi đến chốn, ngay cả khi không có ai kiểm tra hay giám sát.
+
+Đây là phẩm chất quan trọng giúp một người xây dựng uy tín lâu dài trong công việc. Với sinh viên hoặc người mới đi làm, việc rèn luyện sự liêm chính từ sớm sẽ tạo nền tảng tốt cho sự nghiệp sau này.
+
+---
+
+## Phương pháp BMM trong phát triển phần mềm với AI
+
+Một nội dung nổi bật khác trong sự kiện là phương pháp **BMM (BM Method)**.
+
+Đây là phương pháp phát triển phần mềm có sự hỗ trợ của AI, nhưng không sử dụng AI một cách tùy tiện. Mục tiêu của phương pháp này là tránh tình trạng tạo ra “rác code” khi chỉ prompt ngẫu nhiên mà không có kế hoạch rõ ràng.
+
+### Lập kế hoạch trước khi viết code
+
+Trước khi yêu cầu AI viết code, cần có tài liệu thiết kế rõ ràng.
+
+Một số tài liệu quan trọng có thể bao gồm:
+
+- Tài liệu yêu cầu hệ thống.
+- Tài liệu thiết kế chức năng.
+- Tài liệu kiến trúc hệ thống.
+- Danh sách task hoặc user story.
+- Quy tắc coding và tiêu chuẩn kỹ thuật.
+
+Việc lập kế hoạch giúp AI hiểu rõ bối cảnh hơn và tạo ra kết quả chính xác hơn.
+
+### Chia nhỏ task cho AI
+
+AI không nên được giao một yêu cầu quá lớn như “hãy làm toàn bộ hệ thống”.
+
+Thay vào đó, nên chia công việc thành các phần nhỏ hơn như:
+
+- Thiết kế database.
+- Viết API đăng nhập.
+- Viết giao diện đăng ký.
+- Kiểm tra lỗi validate dữ liệu.
+- Viết test case cho một chức năng cụ thể.
+
+Khi task càng rõ ràng và nhỏ, khả năng AI tạo ra kết quả đúng càng cao.
+
+### Kết hợp nhiều vai trò trong quy trình phát triển
+
+Phương pháp BMM mô phỏng quy trình làm việc giữa nhiều vai trò khác nhau như:
+
+- Product Manager: xác định yêu cầu và mục tiêu sản phẩm.
+- System Architect: thiết kế kiến trúc hệ thống.
+- Developer: triển khai code.
+- Reviewer: kiểm tra và cải thiện chất lượng.
+
+Các vai trò này có thể được hỗ trợ bởi AI Agent, nhưng con người vẫn cần kiểm soát, đánh giá và ra quyết định cuối cùng.
+
+---
+
+## Những Gì Học Được
+
+### Về học tập
+
+- Hiểu rằng động lực học tập có thể được xây dựng bằng cơ chế phần thưởng nhỏ.
+- Biết cách chia nhỏ mục tiêu để tránh bị áp lực.
+- Nhận ra tầm quan trọng của việc duy trì streak học tập.
+- Hiểu rằng môi trường học tập ảnh hưởng trực tiếp đến sự tập trung.
+
+### Về tư duy nghề nghiệp
+
+- Cần tập trung vào tư duy giải quyết vấn đề thay vì chỉ làm theo kết quả.
+- Luôn đặt câu hỏi “tại sao” để hiểu bản chất công việc.
+- Không sợ sai, nhưng phải biết học từ lỗi sai.
+- Rèn luyện integrity để xây dựng uy tín cá nhân.
+
+### Về phát triển phần mềm với AI
+
+- AI là công cụ hỗ trợ, không phải công cụ thay thế hoàn toàn con người.
+- Không nên prompt ngẫu nhiên rồi phụ thuộc hoàn toàn vào kết quả AI sinh ra.
+- Cần có tài liệu, kế hoạch và kiến trúc rõ ràng trước khi code.
+- Nên chia nhỏ task để AI xử lý hiệu quả hơn.
+- Con người vẫn phải review, kiểm thử và chịu trách nhiệm với sản phẩm cuối cùng.
+
+---
+
+## Ứng Dụng Vào Việc Học Và Công Việc
+
+Sau sự kiện, tôi có thể áp dụng các bài học vào quá trình học tập và làm dự án như sau:
+
+- Tạo kế hoạch học tập theo từng nhiệm vụ nhỏ từ 10 đến 30 phút.
+- Duy trì streak học tập hằng ngày để tạo thói quen.
+- Sắp xếp lại môi trường học tập để giảm xao nhãng.
+- Khi làm project, bắt đầu từ việc phân tích yêu cầu thay vì code ngay.
+- Sử dụng AI để hỗ trợ viết code, giải thích lỗi và đề xuất giải pháp.
+- Chia nhỏ chức năng trước khi yêu cầu AI hỗ trợ.
+- Luôn kiểm tra lại code do AI tạo ra để tránh lỗi logic hoặc code kém chất lượng.
+
+---
+
+## Trải Nghiệm Trong Sự Kiện
+
+Tham gia buổi chia sẻ tại **FCAJ Community Day** là một trải nghiệm rất bổ ích. Nội dung sự kiện không chỉ tập trung vào kiến thức kỹ thuật mà còn giúp tôi thay đổi cách nhìn về việc học tập, làm việc và phát triển bản thân trong ngành IT.
+
+### Học được cách duy trì động lực học tập
+
+Phần chia sẻ về dopamine, streak và chia nhỏ mục tiêu giúp tôi nhận ra rằng việc học không chỉ phụ thuộc vào ý chí. Nếu biết thiết kế quá trình học hợp lý, việc học có thể trở nên dễ bắt đầu và thú vị hơn.
+
+### Hiểu rõ hơn về tư duy nghề nghiệp
+
+Tôi nhận ra rằng một người làm IT không chỉ cần biết công nghệ, mà còn cần có tư duy giải quyết vấn đề, tinh thần trách nhiệm và sự liêm chính trong công việc.
+
+### Biết cách sử dụng AI hiệu quả hơn
+
+Trước đây, nhiều người thường dùng AI bằng cách nhập prompt rất chung chung và mong AI tạo ra toàn bộ sản phẩm. Sau sự kiện, tôi hiểu rằng muốn dùng AI hiệu quả thì cần có kế hoạch, tài liệu, kiến trúc và task rõ ràng.
+
+### Bài học rút ra
+
+Sự kiện giúp tôi hiểu rằng để phát triển lâu dài trong ngành IT, cần kết hợp giữa:
+
+- Tư duy học tập đúng đắn.
+- Kỷ luật cá nhân.
+- Khả năng phân tích vấn đề.
+- Tinh thần trách nhiệm.
+- Khả năng sử dụng AI như một công cụ hỗ trợ.
+
+---

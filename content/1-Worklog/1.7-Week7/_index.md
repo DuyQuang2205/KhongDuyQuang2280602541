@@ -1,57 +1,78 @@
 ---
 title: "Week 7 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 7 Objectives:
+## Week 7 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete Lab14 and Lab15.
+* Learn Amazon Elastic Container Service (Amazon ECS).
+* Understand container deployment using AWS Fargate.
+* Deploy containerized applications from Amazon ECR to Amazon ECS.
+* Learn how Application Load Balancer (ALB) distributes traffic.
+* Explore AWS Cloud Map and Service Discovery.
+* Understand the Blue/Green Deployment strategy.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 7 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Start Lab14.<br>- Learn Amazon ECS.<br>- Explore Clusters, Task Definitions, Tasks, and Services. | 01/06/2026 | 01/06/2026 | Amazon ECS Documentation |
+| Tuesday | - Learn AWS Fargate.<br>- Deploy containerized applications without managing EC2 instances.<br>- Compare ECS EC2 Launch Type and Fargate Launch Type. | 02/06/2026 | 02/06/2026 | AWS Fargate Documentation |
+| Wednesday | - Integrate Amazon ECS with Amazon ECR.<br>- Pull Docker Images from Amazon ECR.<br>- Deploy containerized applications to an ECS Cluster. | 03/06/2026 | 03/06/2026 | Amazon ECR Documentation |
+| Thursday | - Start Lab15.<br>- Configure an Application Load Balancer.<br>- Create Target Groups and Listener Rules.<br>- Test application accessibility. | 04/06/2026 | 05/06/2026 | Elastic Load Balancing Documentation |
+| Friday | - Learn AWS Cloud Map.<br>- Practice Service Discovery.<br>- Study Blue/Green Deployment.<br>- Observe application updates with minimal downtime. | 06/06/2026 | 06/06/2026 | AWS Cloud Map Documentation |
+| Sunday | - Complete Lab14 and Lab15.<br>- Review the week's knowledge.<br>- Prepare the study plan for Week 8. | 07/06/2026 | 07/06/2026 | AWS Study Group |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed Lab14 and Lab15.
+* Understood the architecture of containerized applications on AWS.
+* Learned the core components of Amazon ECS:
+  * Cluster.
+  * Task Definition.
+  * Task.
+  * Service.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the differences between:
+  * ECS using EC2 launch type.
+  * ECS using AWS Fargate launch type.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully deployed containerized applications from Amazon ECR to Amazon ECS.
+* Learned how Amazon ECS manages the lifecycle of containers automatically.
+* Successfully configured:
+  * Application Load Balancer.
+  * Target Groups.
+  * Listener Rules.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Understood how ALB distributes traffic across multiple containers.
+* Became familiar with AWS Cloud Map for service discovery.
+* Learned how Blue/Green Deployment minimizes downtime during application updates.
+* Understood the advantages of running containers on the serverless AWS Fargate platform.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+---
+
+## Challenges Encountered
+
+* Initially found it difficult to distinguish between Task Definitions, Tasks, and Services in Amazon ECS.
+* Configuring ECS Services together with ALB required multiple steps and careful configuration.
+* AWS Cloud Map was a new concept that required additional study.
+* Blue/Green Deployment involves several AWS services, making the deployment workflow more complex.
+
+---
+
+## Lessons Learned
+
+* Containerization makes application deployment faster, more consistent, and easier to scale.
+* AWS Fargate allows developers to run containers without managing EC2 instances, reducing operational overhead.
+* Amazon ECS, Amazon ECR, and Application Load Balancer together provide a complete container deployment solution on AWS.
+* Blue/Green Deployment is a modern deployment strategy that minimizes downtime and reduces deployment risks.
+* AWS Cloud Map simplifies service discovery within distributed applications by allowing services to locate each other automatically.

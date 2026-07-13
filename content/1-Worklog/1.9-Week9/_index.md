@@ -1,57 +1,69 @@
 ---
 title: "Week 9 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+## Week 9 Objectives
 
-### Week 9 Objectives:
+* Begin implementing the internship project.
+* Set up the development and deployment environment on AWS.
+* Build the AWS infrastructure based on the designed architecture.
+* Deploy the core components of the system.
+* Configure the database and connect it to the application.
+* Verify the basic functionality of the system.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Initialize the project.<br>- Create the source code repository.<br>- Configure the development environment and Git repository. | 15/06/2026 | 15/06/2026 | GitHub Documentation |
+| Tuesday | - Deploy the AWS infrastructure.<br>- Create a VPC, Public Subnet, Security Groups, and EC2 Instance.<br>- Verify server connectivity. | 16/06/2026 | 16/06/2026 | AWS EC2 Documentation |
+| Wednesday | - Create an Amazon RDS database.<br>- Configure the connection between EC2 and RDS.<br>- Initialize the project database. | 17/06/2026 | 17/06/2026 | Amazon RDS Documentation |
+| Thursday | - Deploy the backend application to EC2.<br>- Configure the runtime environment.<br>- Test the database connection. | 18/06/2026 | 19/06/2026 | Spring Boot Documentation |
+| Friday | - Deploy the frontend application.<br>- Test communication between the frontend and backend.<br>- Perform basic functional testing. | 20/06/2026 | 20/06/2026 | React Documentation |
+| Sunday | - Summarize deployment results.<br>- Record issues encountered during implementation.<br>- Prepare the development plan for the following week. | 21/06/2026 | 21/06/2026 | Project Documentation |
 
-### Week 9 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully initialized the internship project.
+* Set up the complete development environment.
+* Built the initial AWS infrastructure, including:
+  * Amazon VPC.
+  * Public Subnet.
+  * Security Groups.
+  * Amazon EC2.
+  * Amazon RDS.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully connected EC2 to Amazon RDS.
+* Initialized the application database.
+* Deployed the first version of the backend application on Amazon EC2.
+* Configured the application runtime environment.
+* Deployed the frontend application and verified communication with the backend.
+* Successfully tested the core system functionalities.
+* Completed technical notes documenting the deployment process and areas for future improvement.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+---
 
-* Used AWS CLI to perform basic operations such as:
+## Challenges Encountered
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Deploying the backend application on EC2 required resolving several dependency and environment configuration issues.
+* The connection between the backend application and Amazon RDS initially failed because of incorrect Security Group configuration.
+* Deploying the frontend and backend separately required proper Cross-Origin Resource Sharing (CORS) configuration.
+* Several deployment issues required log analysis to identify their root causes.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+---
+
+## Lessons Learned
+
+* Preparing the deployment environment beforehand significantly reduces troubleshooting time.
+* A well-designed system architecture makes implementation much smoother.
+* Always verify networking and Security Group settings before troubleshooting application connectivity.
+* Documenting deployment steps makes it easier to recreate the environment when necessary.
+* Reviewing application logs is one of the most effective ways to identify deployment issues quickly.

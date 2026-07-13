@@ -1,242 +1,91 @@
 ---
 title : "Prerequiste"
-date : 2024-01-01 
-weight : 2 
+date : 2026-07-12
+weight : 2
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+#### AWS account and region
+
++ An AWS account with administrator access (or sufficient permissions for VPC, EC2, RDS, S3, CloudFront, IAM and Systems Manager).
++ In this lab, we will use the **Singapore region (ap-southeast-1)**, which is closest to Vietnam. Make sure the region selector at the top-right corner of the AWS Console shows **Asia Pacific (Singapore)** before creating any resource.
+
+![region](/images/5-Workshop/5.2-Prerequisite/region01.png)
+
+#### Application source code
+
+The PetShop project consists of two folders:
 
 ```
+PetShop/
+├── Laravel-api/        # Laravel 10 REST API (backend)
+└── react-project/      # React 18 single-page application (frontend)
+```
 
-#### Provision resources using CloudFormation
+![project](/images/5-Workshop/5.2-Prerequisite/project-structure.png)
 
-In this lab, we will use **N.Virginia region (us-east-1)**.
+#### Prepare deployment artifacts
 
-To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template. 
+Before touching the AWS Console, prepare **three artifacts** on your local machine. They will be uploaded to a private S3 bucket in section 5.4, then pulled down automatically by the EC2 instances at boot time.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+1. **Package the backend source code** (including the `vendor/` folder, so the instances do not need to run Composer). Exclude the local `.env` file and cache folders:
 
-+ Tick 2 acknowledgement boxes
-+ Choose **Create stack**
+```powershell
+cd PetShop
+tar -a -cf petshop-api.zip --exclude=".env" --exclude="storage/logs/*.log" `
+    --exclude="public/storage" --exclude="storage/framework/cache/data" `
+    --exclude="storage/framework/sessions" --exclude="storage/framework/views" `
+    -C Laravel-api .
+```
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+2. **Export the local MySQL database**. Use `--result-file` (instead of shell redirection) so that Vietnamese UTF-8 characters are preserved correctly on Windows:
 
-The **ClouddFormation** deployment requires about 15 minutes to complete.
+```powershell
+mysqldump -u root -p -h 127.0.0.1 --single-transaction --routines --triggers `
+    --set-gtid-purged=OFF --default-character-set=utf8mb4 `
+    --result-file="petshop_dump.sql" petshop
+```
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
+3. **Create the production environment file** `env.aws` — a copy of the Laravel `.env` with production values. The placeholders below will be filled in as the AWS resources are created in the next sections:
 
-+ **2 VPCs** have been created
+```
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=http://<ALB-DNS-name>                  # filled in section 5.5
+FRONTEND_URL=https://<CloudFront-domain>       # filled in section 5.6
+CORS_ALLOWED_ORIGINS=https://<CloudFront-domain>
 
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
+DB_CONNECTION=mysql
+DB_HOST=<RDS-endpoint>                         # filled in section 5.4
+DB_PORT=3306
+DB_DATABASE=petshop
+DB_USERNAME=admin
+DB_PASSWORD=<your-RDS-password>
 
-+ **3 EC2s** have been created
+FILESYSTEM_DISK=s3
+AWS_ACCESS_KEY_ID=                             # leave empty - EC2 uses an IAM Role
+AWS_SECRET_ACCESS_KEY=                         # leave empty - EC2 uses an IAM Role
+AWS_DEFAULT_REGION=ap-southeast-1
+AWS_BUCKET=<your-images-bucket-name>           # filled in section 5.4
 
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=<your-gmail>
+MAIL_PASSWORD=<gmail-app-password>
+MAIL_ENCRYPTION=tls
+
+STRIPE_KEY=<stripe-publishable-key>
+STRIPE_SECRET=<stripe-secret-key>
+GOOGLE_CLIENT_ID=<google-oauth-client-id>
+GOOGLE_CLIENT_SECRET=<google-oauth-client-secret>
+```
+
+{{% notice note %}}
+Because the EC2 instances are granted an **IAM Role** (created in section 5.4), the two `AWS_ACCESS_KEY_*` variables are intentionally left **empty** — the AWS SDK automatically obtains temporary credentials from the instance role. Never hard-code long-lived access keys in configuration files.
+{{% /notice %}}
+
+After this step, the three artifacts are ready on the local machine:
+
+![artifacts](/images/5-Workshop/5.2-Prerequisite/artifacts.png)

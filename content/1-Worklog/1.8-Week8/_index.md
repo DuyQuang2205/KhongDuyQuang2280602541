@@ -1,57 +1,71 @@
 ---
 title: "Week 8 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 8 Objectives:
+## Week 8 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Analyze the internship project requirements.
+* Define the project scope and core system features.
+* Design the overall AWS architecture.
+* Select appropriate AWS services for the project.
+* Prepare the development environment.
+* Create an implementation plan for the following weeks.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 8 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Analyze the internship project requirements.<br>- Identify the main system features.<br>- Discuss the project scope with the mentor. | 08/06/2026 | 08/06/2026 | Internship Requirement |
+| Tuesday | - Design the overall system architecture.<br>- Define the Frontend, Backend, and Database components.<br>- Analyze the application data flow. | 09/06/2026 | 09/06/2026 | AWS Well-Architected Framework |
+| Wednesday | - Select appropriate AWS services.<br>- Create the AWS architecture diagram.<br>- Review security and scalability requirements. | 10/06/2026 | 10/06/2026 | AWS Architecture Center |
+| Thursday | - Prepare the development environment.<br>- Initialize the source code repository.<br>- Configure development tools. | 11/06/2026 | 11/06/2026 | GitHub, VS Code |
+| Friday | - Design the database.<br>- Draft the API list.<br>- Prepare the initial technical documentation. | 12/06/2026 | 13/06/2026 | Project Design Documents |
+| Sunday | - Review the analysis results.<br>- Finalize the initial system design.<br>- Prepare the implementation plan for Week 9. | 14/06/2026 | 14/06/2026 | AWS Study Group |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed the project requirement analysis.
+* Clearly defined the project scope and main system features.
+* Designed the initial AWS architecture for the project.
+* Selected suitable AWS services for different components, including:
+  * Amazon EC2.
+  * Amazon RDS.
+  * Amazon S3.
+  * Amazon CloudFront.
+  * Application Load Balancer.
+  * Amazon Route 53.
+  * AWS IAM.
+  * Amazon CloudWatch.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Completed the first version of the system architecture diagram.
+* Designed the initial database structure and identified the main entities.
+* Prepared the source code repository and development environment.
+* Created an implementation roadmap for the following development phases.
 
-* Used AWS CLI to perform basic operations such as:
+---
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+## Challenges Encountered
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Defining the project scope required balancing available time and functional requirements.
+* Selecting the most suitable AWS services for each component required careful evaluation.
+* Designing the architecture required balancing performance, security, and cost.
+* Creating the architecture diagram required integrating knowledge learned throughout the previous weeks.
+
+---
+
+## Lessons Learned
+
+* Careful requirement analysis reduces implementation risks.
+* Designing the architecture before coding makes development more organized and efficient.
+* Choosing the appropriate AWS services early simplifies future maintenance and scalability.
+* Well-prepared technical documentation improves collaboration and communication.
+* A clear implementation plan helps maintain project progress and reduces unexpected issues.

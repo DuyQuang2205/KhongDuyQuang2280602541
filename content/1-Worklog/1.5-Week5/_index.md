@@ -1,57 +1,86 @@
 ---
 title: "Week 5 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 5 Objectives:
+## Week 5 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete Lab10 and Lab11.
+* Learn how to deploy and manage Windows Server on Amazon EC2.
+* Improve AWS CLI skills for cloud resource management.
+* Learn Amazon Simple Notification Service (SNS).
+* Practice AWS troubleshooting techniques.
+* Develop problem-solving skills in cloud environments.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 5 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Start Lab10.<br>- Learn Amazon EC2 Windows.<br>- Launch a Windows EC2 instance.<br>- Practice Remote Desktop (RDP) connection. | 18/05/2026 | 18/05/2026 | AWS EC2 Documentation |
+| Tuesday | - Continue Lab10.<br>- Explore the Windows Server environment on AWS.<br>- Practice managing Windows instances. | 19/05/2026 | 19/05/2026 | Microsoft Windows Server Documentation |
+| Wednesday | - Start Lab11.<br>- Review AWS CLI.<br>- Practice managing EC2, S3, and IAM resources using the command line. | 20/05/2026 | 20/05/2026 | AWS CLI Documentation |
+| Thursday | - Learn Amazon SNS.<br>- Create an SNS Topic.<br>- Configure Email Subscription.<br>- Practice sending notifications. | 21/05/2026 | 21/05/2026 | Amazon SNS Documentation |
+| Friday | - Learn AWS troubleshooting techniques.<br>- Investigate EC2 connectivity issues.<br>- Review Security Groups, Route Tables, and IAM permissions. | 22/05/2026 | 23/05/2026 | AWS Well-Architected Framework |
+| Sunday | - Complete Lab10 and Lab11.<br>- Review all topics learned.<br>- Prepare the study plan for Week 6. | 24/05/2026 | 24/05/2026 | AWS Study Group |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed Lab10 and Lab11.
+* Learned how to deploy and manage Windows Server on Amazon EC2.
+* Successfully practiced:
+  * Launching Windows EC2 instances.
+  * Connecting via Remote Desktop (RDP).
+  * Managing Windows Server in the AWS Cloud.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Improved AWS CLI skills by managing:
+  * EC2 resources.
+  * Amazon S3.
+  * IAM resources.
+  * Command-line operations.
 
-* Used AWS CLI to perform basic operations such as:
+* Understood how Amazon SNS works, including:
+  * Topics.
+  * Subscriptions.
+  * Notifications.
+  * Publishing messages.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Successfully sent email notifications using Amazon SNS.
+* Learned a structured AWS troubleshooting process, including:
+  * Checking Security Groups.
+  * Verifying IAM permissions.
+  * Reviewing Route Tables.
+  * Testing network connectivity.
+  * Analyzing logs to identify root causes.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+---
+
+## Challenges Encountered
+
+* Connecting to Windows EC2 through Remote Desktop required proper Security Group configuration and Administrator password retrieval.
+* AWS CLI contains many commands and parameters that required additional practice.
+* Understanding the Publish/Subscribe mechanism of Amazon SNS took some time.
+* Troubleshooting cloud environments required checking multiple AWS components before identifying the root cause.
+
+---
+
+## Lessons Learned
+
+* AWS CLI provides a faster and more efficient way to manage cloud resources compared to using only the AWS Management Console.
+* Amazon SNS is a useful service for sending notifications and can easily integrate with many AWS services.
+* When troubleshooting AWS systems, it is best to investigate layer by layer:
+  * IAM permissions.
+  * Security Groups.
+  * Networking.
+  * EC2 instances.
+  * Applications.
+
+* Recording troubleshooting steps helps resolve similar issues more efficiently in the future.
+* Being proficient with both the AWS Management Console and AWS CLI improves overall cloud administration skills.

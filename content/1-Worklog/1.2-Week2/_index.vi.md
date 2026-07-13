@@ -1,59 +1,98 @@
 ---
-title: "Worklog Tuần 2"
+title: "Week 2 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
+## Mục tiêu tuần 2
 
-### Mục tiêu tuần 2:
+* Hoàn thành các nội dung của Lab04, Lab05 và Lab06.
+* Hiểu cách triển khai một hệ thống Web Application trên AWS.
+* Làm quen với kiến trúc nhiều tầng (Multi-tier Architecture).
+* Tìm hiểu cơ chế cân bằng tải (Elastic Load Balancer).
+* Tìm hiểu Auto Scaling Group và cơ chế tự động mở rộng tài nguyên.
+* Thực hành triển khai cơ sở dữ liệu Amazon RDS.
+* Hiểu cách kết nối giữa EC2 và RDS.
+* Làm quen với CloudWatch để theo dõi tài nguyên hệ thống.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|--------------------|
+| Thứ 2 | - Ôn tập kiến thức tuần trước.<br>- Bắt đầu Lab04.<br>- Tìm hiểu kiến trúc triển khai Web Application trên AWS.<br>- Làm quen với VPC, Public Subnet và Security Group. | 27/04/2026 | 27/04/2026 | AWS Study Group Lab04 |
+| Thứ 3 | - Tiếp tục Lab04.<br>- Khởi tạo EC2 Instance.<br>- Cấu hình Security Group.<br>- Thực hành truy cập EC2 qua SSH. | 28/04/2026 | 28/04/2026 | AWS EC2 Documentation |
+| Thứ 4 | - Hoàn thành Lab05.<br>- Tìm hiểu Amazon RDS.<br>- Khởi tạo cơ sở dữ liệu MySQL trên RDS.<br>- Kết nối EC2 với RDS và kiểm tra kết nối. | 29/04/2026 | 30/04/2026 | AWS RDS Documentation |
+| Thứ 5 | - Thực hiện Lab06.<br>- Tìm hiểu Elastic Load Balancer (ALB).<br>- Cấu hình Auto Scaling Group.<br>- Thiết lập Launch Template cho EC2. | 01/05/2026 | 02/05/2026 | AWS Auto Scaling Documentation |
+| Thứ 6 | - Thực hành kiểm thử Auto Scaling.<br>- Theo dõi hoạt động của EC2 thông qua CloudWatch.<br>- Tổng hợp kiến thức và hoàn thành Lab04, Lab05, Lab06. | 03/05/2026 | 03/05/2026 | AWS CloudWatch Documentation |
 
-### Kết quả đạt được tuần 2:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành đầy đủ Lab04, Lab05 và Lab06 theo đúng tiến độ Bootcamp.
+* Hiểu được mô hình triển khai một Web Application trên AWS theo kiến trúc nhiều tầng.
+* Thực hành thành công việc:
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+  * Khởi tạo EC2 Instance.
+  * Cấu hình Security Group.
+  * Kết nối EC2 thông qua SSH.
+  * Quản lý Key Pair.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu được cách triển khai và sử dụng Amazon RDS:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+  * Tạo Database MySQL.
+  * Cấu hình Security Group cho Database.
+  * Kết nối EC2 với RDS.
+  * Kiểm tra khả năng truy cập cơ sở dữ liệu.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Tìm hiểu cơ chế hoạt động của Elastic Load Balancer:
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+  * Phân phối lưu lượng truy cập.
+  * Health Check.
+  * Target Group.
+  * High Availability.
 
+* Hiểu được nguyên lý hoạt động của Auto Scaling Group:
 
+  * Launch Template.
+  * Desired Capacity.
+  * Minimum Capacity.
+  * Maximum Capacity.
+  * Chính sách tự động mở rộng và thu hẹp tài nguyên.
+
+* Thực hành giám sát tài nguyên thông qua Amazon CloudWatch:
+
+  * Theo dõi CPU Utilization.
+  * Network Traffic.
+  * EC2 Status.
+  * Basic Monitoring.
+
+* Hiểu được cách các dịch vụ AWS phối hợp với nhau để xây dựng một hệ thống Web có khả năng mở rộng và độ sẵn sàng cao.
+
+---
+
+## Khó khăn gặp phải
+
+* Ban đầu còn gặp khó khăn trong việc hiểu mối quan hệ giữa VPC, Subnet, Route Table và Security Group.
+* Quá trình kết nối EC2 với Amazon RDS gặp lỗi do Security Group chưa mở đúng cổng MySQL (3306).
+* Chưa quen với cơ chế hoạt động của Auto Scaling Group nên mất thời gian để hiểu các thông số như Desired Capacity, Minimum Size và Maximum Size.
+* Khi thực hành CloudWatch, còn gặp khó khăn trong việc đọc và phân tích các chỉ số giám sát.
+
+---
+
+## Kinh nghiệm rút ra
+
+* Trước khi triển khai hệ thống, cần thiết kế sơ đồ kiến trúc để hiểu rõ mối quan hệ giữa các dịch vụ AWS.
+* Security Group là thành phần rất quan trọng, cần kiểm tra kỹ các Inbound Rule và Outbound Rule trước khi xử lý lỗi kết nối.
+* Amazon RDS nên được đặt trong Private Subnet để tăng tính bảo mật cho hệ thống.
+* Elastic Load Balancer và Auto Scaling Group là hai thành phần quan trọng giúp xây dựng hệ thống có khả năng mở rộng và đảm bảo tính sẵn sàng cao.
+* CloudWatch là công cụ hữu ích để theo dõi hiệu năng hệ thống và hỗ trợ phát hiện sự cố sớm.
+* Sau khi hoàn thành mỗi Lab, việc tổng hợp kiến thức và ghi chú lại các bước triển khai giúp dễ dàng ôn tập và áp dụng vào dự án thực tế.

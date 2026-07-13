@@ -1,31 +1,30 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-07-12
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Deploying a Full-Stack Pet Shop Web Application on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+**PetShop** is a full-stack e-commerce and pet care booking web application, built with **React** (frontend) and **Laravel** (backend API), allowing customers to purchase pet products and book pet care services such as grooming, bathing, and pet hotel.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+In this lab, you will learn how to deploy the entire PetShop application onto AWS following a production-grade, highly available architecture: the React frontend is served globally through **Amazon CloudFront** from a private **Amazon S3** bucket, while the Laravel API runs on **Amazon EC2** instances inside private subnets, managed by an **Auto Scaling Group** behind an **Application Load Balancer**, with data stored in **Amazon RDS (MySQL)** and product images stored in **Amazon S3**.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+You will build the infrastructure layer by layer, and each layer offers a different benefit depending on the role it plays in the overall architecture:
++ **Network layer** - Create a VPC spanning two Availability Zones with public and private subnets, NAT Gateway, and an S3 Gateway Endpoint so that private workloads can reach Amazon S3 without traversing the Public Internet.
++ **Application layer** - Deploy the Laravel API on EC2 instances in private subnets behind an Application Load Balancer, and serve the React frontend through CloudFront with a single distribution acting as the secure entry point for both the website and the API.
 
 #### Content
 
 1. [Workshop overview](5.1-Workshop-overview)
 2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+3. [Create VPC network](5.3-VPC/)
+4. [Create RDS Database and S3 Buckets](5.4-Database-S3/)
+5. [Deploy Backend with EC2, ALB and Auto Scaling](5.5-Backend/)
+6. [Deploy Frontend with S3 and CloudFront](5.6-Frontend/)
+7. [Test the application](5.7-Testing/)
+8. [Clean up](5.8-Cleanup/)

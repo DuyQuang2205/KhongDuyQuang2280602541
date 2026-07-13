@@ -5,53 +5,79 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 1 Objectives:
+## Week 1 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Attend the official AWS Internship Kickoff session.
+* Understand the internship objectives, roadmap, timeline, and regulations.
+* Create a personal study and working plan for the internship period.
+* Become familiar with the AWS Management Console.
+* Learn the fundamental AWS concepts, including Regions, Availability Zones (AZs), and Virtual Private Cloud (VPC).
+* Create an AWS account and access the AWS Cloud environment.
+* Study the basic concepts of AWS Identity and Access Management (IAM).
+* Complete Lab02 and Lab03.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 1 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Attend the official AWS Internship Kickoff session.<br>- Take notes on the internship objectives, timeline, regulations, and learning roadmap.<br>- Create a personal study schedule for the internship program. | 20/04/2026 | 20/04/2026 | FCAJ Bootcamp |
+| Tuesday | - Explore the AWS Management Console.<br>- Learn how to search for AWS services.<br>- Practice switching between AWS Regions.<br>- Explore the Billing Dashboard and AWS Search Bar. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Study the basic AWS infrastructure concepts.<br>&emsp;+ Region<br>&emsp;+ Availability Zone (AZ)<br>&emsp;+ Virtual Private Cloud (VPC) overview. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Create an AWS account.<br>- Set up the AWS working environment.<br>- Review basic account settings and billing information. | 23/04/2026 | 23/04/2026 | AWS Management Console |
+| Friday | - Learn AWS Identity and Access Management (IAM).<br>&emsp;+ IAM Users<br>&emsp;+ IAM Groups<br>&emsp;+ IAM Roles<br>&emsp;+ IAM Policies<br>&emsp;+ Allow / Deny permissions<br>&emsp;+ Principle of Least Privilege. | 24/04/2026 | 25/04/2026 | AWS IAM Documentation |
+| Sunday | - Complete Lab02 and Lab03.<br>- Review the knowledge learned throughout the week.<br>- Prepare the study plan and discussion topics for the following week. | 26/04/2026 | 26/04/2026 | AWS Study Group Labs |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully attended the official AWS Internship Kickoff session.
+* Gained a clear understanding of the internship objectives, learning roadmap, timeline, and program regulations.
+* Developed a personal study and working schedule for the internship period.
+* Became familiar with the AWS Management Console, including how to:
+  * Search for AWS services.
+  * Switch between Regions.
+  * Access the Billing Dashboard.
+  * Use the AWS Search Bar efficiently.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the fundamental AWS infrastructure concepts:
+  * AWS Region.
+  * Availability Zone (AZ).
+  * Virtual Private Cloud (VPC).
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully created an AWS account and accessed the AWS Cloud environment.
+* Learned the core concepts of AWS Identity and Access Management (IAM), including:
+  * IAM Users.
+  * IAM Groups.
+  * IAM Roles.
+  * IAM Policies.
+  * Allow and Deny permissions.
+  * The Principle of Least Privilege.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Successfully completed Lab02 and Lab03.
+* Prepared a study plan for Week 2, including learning objectives, schedule, and discussion topics for the mentor.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+---
+
+## Challenges Encountered
+
+* Initially found the AWS Management Console overwhelming due to the large number of available AWS services.
+* Had difficulty distinguishing the concepts of Regions, Availability Zones, and Virtual Private Clouds because they were completely new.
+* The AWS account registration process required careful verification and configuration to avoid unexpected charges.
+* It took some time to understand how IAM permissions are evaluated, especially the interaction between Allow and Deny policies.
+
+---
+
+## Lessons Learned
+
+* Creating a structured learning plan from the beginning helps maintain steady progress throughout the internship.
+* Understanding AWS fundamental concepts is essential before working with more advanced cloud services.
+* The AWS Search Bar is an effective tool for quickly locating services within the Management Console.
+* IAM is one of the most critical AWS services; understanding the Principle of Least Privilege is essential for building secure cloud environments.
+* Completing hands-on labs and documenting the implementation process after each session significantly improves knowledge retention and makes it easier to apply the concepts in future projects.
+
+---

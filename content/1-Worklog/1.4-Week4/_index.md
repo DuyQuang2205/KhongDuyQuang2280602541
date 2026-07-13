@@ -1,57 +1,81 @@
 ---
 title: "Week 4 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 4 Objectives:
+## Week 4 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete Lab08 and Lab09.
+* Learn Amazon Route 53 and Hybrid DNS.
+* Understand Infrastructure as Code (IaC) using AWS CloudFormation.
+* Learn how to monitor AWS resources with Amazon CloudWatch.
+* Practice using CloudWatch Logs, Dashboard, and Alarm.
+* Understand infrastructure management and monitoring on AWS.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 4 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Start Lab08.<br>- Learn Amazon Route 53.<br>- Study DNS, Hosted Zones, and Record Sets. | 11/05/2026 | 11/05/2026 | AWS Route 53 Documentation |
+| Tuesday | - Continue Lab08.<br>- Learn Hybrid DNS.<br>- Configure Route 53 and test DNS resolution. | 12/05/2026 | 12/05/2026 | AWS Route 53 Documentation |
+| Wednesday | - Start Lab09.<br>- Learn AWS CloudFormation.<br>- Study the Infrastructure as Code (IaC) concept. | 13/05/2026 | 13/05/2026 | AWS CloudFormation Documentation |
+| Thursday | - Continue Lab09.<br>- Deploy AWS resources using CloudFormation Templates.<br>- Learn Stack creation and Stack updates. | 14/05/2026 | 15/05/2026 | AWS CloudFormation Documentation |
+| Friday | - Learn Amazon CloudWatch.<br>- Practice using CloudWatch Logs, Dashboard, and Alarm.<br>- Monitor EC2 and RDS resources. | 16/05/2026 | 16/05/2026 | AWS CloudWatch Documentation |
+| Sunday | - Complete Lab08 and Lab09.<br>- Review the week's knowledge.<br>- Prepare the learning plan for the following week. | 17/05/2026 | 17/05/2026 | AWS Study Group |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed Lab08 and Lab09.
+* Understood how DNS works on AWS using Amazon Route 53.
+* Learned the fundamentals of:
+  * Hosted Zones.
+  * Public DNS.
+  * Private DNS.
+  * Record Sets.
+  * Hybrid DNS.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the Infrastructure as Code (IaC) concept and its advantages.
+* Practiced deploying AWS resources using CloudFormation Templates.
+* Learned how to:
+  * Create stacks.
+  * Update stacks.
+  * Delete stacks.
+  * Manage infrastructure automatically.
 
-* Used AWS CLI to perform basic operations such as:
+* Became familiar with Amazon CloudWatch:
+  * Metrics.
+  * Logs.
+  * Dashboards.
+  * Alarms.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Learned how to monitor EC2 and Amazon RDS resources using CloudWatch.
+* Understood the importance of dashboards for infrastructure monitoring.
+* Practiced creating alarms to notify administrators when resource usage exceeds defined thresholds.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+---
+
+## Challenges Encountered
+
+* Hybrid DNS was a new concept and required additional time to understand how Route 53 integrates with on-premises environments.
+* Writing CloudFormation Templates required careful attention to YAML syntax and resource definitions.
+* Initially confused the differences between CloudWatch Metrics and CloudWatch Logs.
+* Choosing appropriate alarm thresholds required additional practice.
+
+---
+
+## Lessons Learned
+
+* Infrastructure as Code enables faster, more consistent, and less error-prone infrastructure deployment.
+* CloudFormation is a valuable service for managing AWS infrastructure in production environments.
+* CloudWatch plays an essential role in monitoring system performance and detecting issues.
+* Dashboards provide a centralized view of infrastructure health.
+* CloudWatch Alarms help administrators respond quickly to abnormal system behavior.
+* Saving CloudFormation Templates after each lab makes future deployments easier and more efficient.

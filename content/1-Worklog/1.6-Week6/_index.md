@@ -1,57 +1,84 @@
 ---
 title: "Week 6 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 6 Objectives:
+## Week 6 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete Lab12 and Lab13.
+* Understand the fundamentals of Docker and containerization.
+* Practice creating Docker Images and Docker Containers.
+* Learn how to use Docker Hub and Amazon Elastic Container Registry (Amazon ECR).
+* Understand how Docker Images are stored and managed on AWS.
+* Learn the VM Import/Export process for migrating virtual machines to and from AWS.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+## Tasks Completed This Week
 
-### Week 6 Achievements:
+| Day | Task | Start Date | Completion Date | Reference Material |
+|------|------|------------|-----------------|--------------------|
+| Monday | - Start Lab12.<br>- Learn Docker Fundamentals.<br>- Install Docker Desktop.<br>- Explore the Docker Engine architecture. | 25/05/2026 | 25/05/2026 | Docker Documentation |
+| Tuesday | - Practice working with Docker Images and Docker Containers.<br>- Learn Dockerfile syntax.<br>- Build the first Docker Image and run a container. | 26/05/2026 | 26/05/2026 | Docker Documentation |
+| Wednesday | - Learn Docker Hub.<br>- Practice pulling and pushing Docker Images.<br>- Manage image repositories. | 27/05/2026 | 27/05/2026 | Docker Hub Documentation |
+| Thursday | - Start Lab13.<br>- Learn Amazon Elastic Container Registry (Amazon ECR).<br>- Create an ECR Repository.<br>- Push Docker Images to Amazon ECR. | 28/05/2026 | 29/05/2026 | Amazon ECR Documentation |
+| Friday | - Learn AWS VM Import/Export.<br>- Study the VM migration process.<br>- Compare traditional Virtual Machines with Containers. | 30/05/2026 | 30/05/2026 | AWS VM Import/Export Documentation |
+| Sunday | - Complete Lab12 and Lab13.<br>- Review Docker and Amazon ECR concepts.<br>- Prepare the learning plan for Week 7. | 31/05/2026 | 31/05/2026 | AWS Study Group |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Successfully created and configured an AWS Free Tier account.
+## Achievements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully completed Lab12 and Lab13.
+* Understood the differences between Virtual Machines and Containers.
+* Learned the core Docker concepts:
+  * Docker Engine.
+  * Docker Image.
+  * Docker Container.
+  * Dockerfile.
+  * Docker Registry.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully practiced:
+  * Building Docker Images.
+  * Running Docker Containers.
+  * Managing containers using Docker CLI.
+  * Updating and removing Docker Images.
 
-* Used AWS CLI to perform basic operations such as:
+* Became familiar with Docker Hub:
+  * Pulling Images.
+  * Pushing Images.
+  * Managing image repositories.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Learned how Amazon ECR works:
+  * Creating repositories.
+  * Pushing Images.
+  * Pulling Images.
+  * Managing container images on AWS.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Studied the VM Import/Export workflow:
+  * Importing virtual machines from on-premises environments to AWS.
+  * Exporting virtual machines from AWS.
+  * Understanding migration scenarios during cloud adoption.
+
+---
+
+## Challenges Encountered
+
+* Initially confused Docker Images with Docker Containers.
+* Writing efficient Dockerfiles required careful attention to syntax and instruction order.
+* Pushing Docker Images to Amazon ECR required proper AWS CLI configuration and Docker authentication.
+* VM Import/Export was a new concept that required additional time to understand its practical use cases.
+
+---
+
+## Lessons Learned
+
+* Docker packages applications together with their runtime environment, making deployments more consistent and portable.
+* Docker Images should be optimized to reduce build time and deployment size.
+* Amazon ECR is an excellent service for storing container images and integrates seamlessly with Amazon ECS and Amazon EKS.
+* Mastering Docker is an essential foundation before learning container orchestration services.
+* VM Import/Export simplifies cloud migration for organizations moving workloads from traditional infrastructure to AWS.
