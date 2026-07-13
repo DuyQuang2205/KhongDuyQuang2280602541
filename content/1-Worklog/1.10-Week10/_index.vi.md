@@ -22,12 +22,12 @@ pre: " <b> 1.10. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Rà soát toàn bộ chức năng của hệ thống.<br>- Kiểm tra các chức năng quản lý sự kiện và đăng ký tham gia.<br>- Ghi nhận các lỗi cần sửa. | 22/06/2026 | 22/06/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 3 | - Sửa lỗi Backend.<br>- Tối ưu API và xử lý dữ liệu.<br>- Kiểm tra kết nối với Amazon RDS. | 23/06/2026 | 23/06/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 4 | - Hoàn thiện giao diện Frontend.<br>- Kiểm tra trải nghiệm người dùng.<br>- Sửa các lỗi giao diện và kết nối API. | 24/06/2026 | 24/06/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 5 | - Kiểm thử toàn bộ hệ thống.<br>- Thực hiện các bài kiểm thử chức năng.<br>- Kiểm tra tính ổn định khi nhiều người dùng truy cập. | 25/06/2026 | 26/06/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 6 | - Theo dõi hệ thống bằng Amazon CloudWatch.<br>- Kiểm tra Log và tối ưu cấu hình EC2.<br>- Rà soát Security Group và các thiết lập bảo mật. | 27/06/2026 | 27/06/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Chủ nhật | - Hoàn thiện tài liệu triển khai.<br>- Tổng hợp kết quả thực hiện.<br>- Chuẩn bị nội dung báo cáo và kế hoạch tuần tiếp theo. | 28/06/2026 | 28/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 2 | - Rà soát toàn bộ chức năng của hệ thống.<br>- Kiểm tra các chức năng quản lý sự kiện và đăng ký tham gia.<br>- Ghi nhận các lỗi cần sửa. | 22/06/2026 | 22/06/2026 | https://www.atlassian.com/continuous-delivery/software-testing/test-plan |
+| Thứ 3 | - Sửa lỗi Backend.<br>- Tối ưu API và xử lý dữ liệu.<br>- Kiểm tra kết nối với Amazon RDS. | 23/06/2026 | 23/06/2026 | https://docs.spring.io/spring-boot/index.html |
+| Thứ 4 | - Hoàn thiện giao diện Frontend.<br>- Kiểm tra trải nghiệm người dùng.<br>- Sửa các lỗi giao diện và kết nối API. | 24/06/2026 | 24/06/2026 | https://react.dev/learn |
+| Thứ 5 | - Kiểm thử toàn bộ hệ thống.<br>- Thực hiện các bài kiểm thử chức năng.<br>- Kiểm tra tính ổn định khi nhiều người dùng truy cập. | 25/06/2026 | 26/06/2026 | https://www.postman.com/api-platform/api-testing/ |
+| Thứ 6 | - Theo dõi hệ thống bằng Amazon CloudWatch.<br>- Kiểm tra Log và tối ưu cấu hình EC2.<br>- Rà soát Security Group và các thiết lập bảo mật. | 27/06/2026 | 27/06/2026 | https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html |
+| Chủ nhật | - Hoàn thiện tài liệu triển khai.<br>- Tổng hợp kết quả thực hiện.<br>- Chuẩn bị nội dung báo cáo và kế hoạch tuần tiếp theo. | 28/06/2026 | 28/06/2026 | https://www.atlassian.com/software/confluence |
 
 ---
 
