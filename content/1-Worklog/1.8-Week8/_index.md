@@ -22,12 +22,12 @@ pre: " <b> 1.8. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Analyze the internship project requirements.<br>- Identify the main system features.<br>- Discuss the project scope with the mentor. | 08/06/2026 | 08/06/2026 | https://www.atlassian.com/agile/project-management/requirements |
-| Tuesday | - Design the overall system architecture.<br>- Define the Frontend, Backend, and Database components.<br>- Analyze the application data flow. | 09/06/2026 | 09/06/2026 | https://www.lucidchart.com/pages/software-architecture-diagram |
+| Monday | - Analyze the internship project requirements.<br>- Identify the main system features.<br>- Discuss the project scope with the mentor. | 08/06/2026 | 08/06/2026 | - |
+| Tuesday | - Design the overall system architecture.<br>- Define the Frontend, Backend, and Database components.<br>- Analyze the application data flow. | 09/06/2026 | 09/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
 | Wednesday | - Select appropriate AWS services.<br>- Create the AWS architecture diagram.<br>- Review security and scalability requirements. | 10/06/2026 | 10/06/2026 | https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html |
 | Thursday | - Prepare the development environment.<br>- Initialize the source code repository.<br>- Configure development tools. | 11/06/2026 | 11/06/2026 | https://git-scm.com/docs |
-| Friday | - Design the database.<br>- Draft the API list.<br>- Prepare the initial technical documentation. | 12/06/2026 | 13/06/2026 | https://swagger.io/specification/ |
-| Sunday | - Review the analysis results.<br>- Finalize the initial system design.<br>- Prepare the implementation plan for Week 9. | 14/06/2026 | 14/06/2026 | https://www.atlassian.com/software/jira/guides/getting-started/what-is-a-roadmap |
+| Friday | - Design the database.<br>- Draft the API list.<br>- Prepare the initial technical documentation. | 12/06/2026 | 13/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
+| Sunday | - Review the analysis results.<br>- Finalize the initial system design.<br>- Prepare the implementation plan for Week 9. | 14/06/2026 | 14/06/2026 | - |
 
 ---
 

@@ -22,12 +22,12 @@ pre: " <b> 1.10. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Review all system features.<br>- Verify event management and registration functions.<br>- Record issues for further fixes. | 22/06/2026 | 22/06/2026 | https://www.atlassian.com/continuous-delivery/software-testing/test-plan |
-| Tuesday | - Fix backend issues.<br>- Optimize APIs and data processing.<br>- Verify the connection to Amazon RDS. | 23/06/2026 | 23/06/2026 | https://docs.spring.io/spring-boot/index.html |
-| Wednesday | - Improve the frontend interface.<br>- Review user experience.<br>- Fix UI issues and API integration problems. | 24/06/2026 | 24/06/2026 | https://react.dev/learn |
-| Thursday | - Perform comprehensive system testing.<br>- Execute functional test cases.<br>- Verify system stability under multiple user requests. | 25/06/2026 | 26/06/2026 | https://www.postman.com/api-platform/api-testing/ |
+| Monday | - Review all system features.<br>- Verify event management and registration functions.<br>- Record issues for further fixes. | 22/06/2026 | 22/06/2026 | - |
+| Tuesday | - Fix backend issues.<br>- Optimize APIs and data processing.<br>- Verify the connection to Amazon RDS. | 23/06/2026 | 23/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
+| Wednesday | - Improve the frontend interface.<br>- Review user experience.<br>- Fix UI issues and API integration problems. | 24/06/2026 | 24/06/2026 | https://react.dev/ |
+| Thursday | - Perform comprehensive system testing.<br>- Execute functional test cases.<br>- Verify system stability under multiple user requests. | 25/06/2026 | 26/06/2026 | - |
 | Friday | - Monitor the system using Amazon CloudWatch.<br>- Review logs and optimize EC2 configuration.<br>- Verify Security Groups and security settings. | 27/06/2026 | 27/06/2026 | https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html |
-| Sunday | - Finalize deployment documentation.<br>- Summarize weekly progress.<br>- Prepare the project report and the plan for the following week. | 28/06/2026 | 28/06/2026 | https://www.atlassian.com/software/confluence |
+| Sunday | - Finalize deployment documentation.<br>- Summarize weekly progress.<br>- Prepare the project report and the plan for the following week. | 28/06/2026 | 28/06/2026 | - |
 
 ---
 

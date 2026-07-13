@@ -22,12 +22,12 @@ pre: " <b> 1.12. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Review the entire source code and documentation.<br>- Prepare the final project demonstration. | 06/07/2026 | 06/07/2026 | Source code and documentation checklist |
-| Tuesday | - Present the completed project.<br>- Explain the AWS architecture and core system features.<br>- Receive feedback from the mentor. | 07/07/2026 | 07/07/2026 | Project presentation checklist |
-| Wednesday | - Improve the system based on the mentor's feedback.<br>- Finalize the technical documentation and deployment guide. | 08/07/2026 | 08/07/2026 | Change log and revision notes |
-| Thursday | - Complete the bilingual internship report.<br>- Review the Proposal, Worklogs, and Blog posts.<br>- Verify the overall report content. | 09/07/2026 | 10/07/2026 | Internship report template |
-| Friday | - Deliver the source code and documentation.<br>- Perform a final deployment verification. | 11/07/2026 | 11/07/2026 | Project handover checklist |
-| Sunday | - Summarize the internship program.<br>- Evaluate the overall achievements.<br>- Submit the final report and complete the internship. | 12/07/2026 | 12/07/2026 | Internship summary notes |
+| Monday | - Review the entire source code and documentation.<br>- Prepare the final project demonstration. | 06/07/2026 | 06/07/2026 | - |
+| Tuesday | - Present the completed project.<br>- Explain the AWS architecture and core system features.<br>- Receive feedback from the mentor. | 07/07/2026 | 07/07/2026 | https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html |
+| Wednesday | - Improve the system based on the mentor's feedback.<br>- Finalize the technical documentation and deployment guide. | 08/07/2026 | 08/07/2026 | - |
+| Thursday | - Complete the bilingual internship report.<br>- Review the Proposal, Worklogs, and Blog posts.<br>- Verify the overall report content. | 09/07/2026 | 10/07/2026 | - |
+| Friday | - Deliver the source code and documentation.<br>- Perform a final deployment verification. | 11/07/2026 | 11/07/2026 | - |
+| Sunday | - Summarize the internship program.<br>- Evaluate the overall achievements.<br>- Submit the final report and complete the internship. | 12/07/2026 | 12/07/2026 | - |
 
 ---
 

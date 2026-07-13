@@ -24,9 +24,9 @@ pre: " <b> 1.9. </b> "
 | Monday | - Initialize the project.<br>- Create the source code repository.<br>- Configure the development environment and Git repository. | 15/06/2026 | 15/06/2026 | https://git-scm.com/docs |
 | Tuesday | - Deploy the AWS infrastructure.<br>- Create a VPC, Public Subnet, Security Groups, and EC2 Instance.<br>- Verify server connectivity. | 16/06/2026 | 16/06/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html |
 | Wednesday | - Create an Amazon RDS database.<br>- Configure the connection between EC2 and RDS.<br>- Initialize the project database. | 17/06/2026 | 17/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
-| Thursday | - Deploy the backend application to EC2.<br>- Configure the runtime environment.<br>- Test the database connection. | 18/06/2026 | 19/06/2026 | https://docs.spring.io/spring-boot/index.html |
-| Friday | - Deploy the frontend application.<br>- Test communication between the frontend and backend.<br>- Perform basic functional testing. | 20/06/2026 | 20/06/2026 | https://react.dev/ |
-| Sunday | - Summarize deployment results.<br>- Record issues encountered during implementation.<br>- Prepare the development plan for the following week. | 21/06/2026 | 21/06/2026 | https://www.atlassian.com/software/confluence/guides |
+| Thursday | - Deploy the backend application to EC2.<br>- Configure the runtime environment.<br>- Test the database connection. | 18/06/2026 | 19/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
+| Friday | - Deploy the frontend application.<br>- Test communication between the frontend and backend.<br>- Perform basic functional testing. | 20/06/2026 | 20/06/2026 | https://docs.spring.io/spring-boot/index.html |
+| Sunday | - Summarize deployment results.<br>- Record issues encountered during implementation.<br>- Prepare the development plan for the following week. | 21/06/2026 | 21/06/2026 | - |
 
 ---
 

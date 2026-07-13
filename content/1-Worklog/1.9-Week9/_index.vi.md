@@ -25,9 +25,9 @@ pre: " <b> 1.9. </b> "
 | Thứ 2 | - Khởi tạo Project.<br>- Tạo Source Code Repository.<br>- Cấu hình môi trường phát triển và quản lý mã nguồn bằng Git. | 15/06/2026 | 15/06/2026 | https://git-scm.com/docs |
 | Thứ 3 | - Triển khai hạ tầng AWS.<br>- Tạo VPC, Public Subnet, Security Group và EC2 Instance.<br>- Kiểm tra khả năng truy cập máy chủ. | 16/06/2026 | 16/06/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html |
 | Thứ 4 | - Tạo Amazon RDS.<br>- Thiết lập kết nối giữa EC2 và RDS.<br>- Khởi tạo cơ sở dữ liệu cho hệ thống. | 17/06/2026 | 17/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
-| Thứ 5 | - Triển khai Backend lên EC2.<br>- Cấu hình môi trường chạy ứng dụng.<br>- Kiểm tra kết nối Database. | 18/06/2026 | 19/06/2026 | https://docs.spring.io/spring-boot/index.html |
-| Thứ 6 | - Triển khai Frontend.<br>- Kiểm tra giao tiếp giữa Frontend và Backend.<br>- Thực hiện các bài kiểm thử chức năng cơ bản. | 20/06/2026 | 20/06/2026 | https://react.dev/ |
-| Chủ nhật | - Tổng hợp kết quả triển khai.<br>- Ghi nhận các lỗi phát sinh.<br>- Chuẩn bị kế hoạch phát triển cho tuần tiếp theo. | 21/06/2026 | 21/06/2026 | https://www.atlassian.com/software/confluence/guides |
+| Thứ 5 | - Triển khai Backend lên EC2.<br>- Cấu hình môi trường chạy ứng dụng.<br>- Kiểm tra kết nối Database. | 18/06/2026 | 19/06/2026 | https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html |
+| Thứ 6 | - Triển khai Frontend.<br>- Kiểm tra giao tiếp giữa Frontend và Backend.<br>- Thực hiện các bài kiểm thử chức năng cơ bản. | 20/06/2026 | 20/06/2026 | https://docs.spring.io/spring-boot/index.html |
+| Chủ nhật | - Tổng hợp kết quả triển khai.<br>- Ghi nhận các lỗi phát sinh.<br>- Chuẩn bị kế hoạch phát triển cho tuần tiếp theo. | 21/06/2026 | 21/06/2026 | - |
 
 ---
 
