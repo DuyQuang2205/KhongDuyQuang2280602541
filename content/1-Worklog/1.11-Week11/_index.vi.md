@@ -20,12 +20,12 @@ pre: " <b> 1.11. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Rà soát toàn bộ mã nguồn.<br>- Kiểm tra lại kiến trúc hệ thống.<br>- Hoàn thiện các chức năng còn thiếu. | 29/06/2026 | 29/06/2026 | Project Documentation |
-| Thứ 3 | - Thực hiện kiểm thử cuối cùng.<br>- Sửa các lỗi phát sinh trong quá trình kiểm thử.<br>- Đánh giá hiệu năng hệ thống. | 30/06/2026 | 30/06/2026 | Testing Documentation |
-| Thứ 4 | - Hoàn thiện tài liệu kỹ thuật.<br>- Cập nhật sơ đồ kiến trúc AWS.<br>- Hoàn thành tài liệu hướng dẫn triển khai hệ thống. | 01/07/2026 | 01/07/2026 | AWS Architecture Center |
-| Thứ 5 | - Viết báo cáo thực tập song ngữ.<br>- Hoàn thiện Proposal, Worklog và Blog.<br>- Chuẩn bị Slide trình bày. | 02/07/2026 | 03/07/2026 | Internship Report Template |
-| Thứ 6 | - Demo dự án với Mentor.<br>- Nhận góp ý và chỉnh sửa hệ thống.<br>- Cập nhật tài liệu theo phản hồi. | 04/07/2026 | 04/07/2026 | Mentor Feedback |
-| Chủ nhật | - Tổng kết toàn bộ quá trình thực tập.<br>- Hoàn thiện báo cáo cuối cùng.<br>- Chuẩn bị nộp báo cáo và các tài liệu liên quan. | 05/07/2026 | 05/07/2026 | Internship Documentation |
+| Thứ 2 | - Rà soát toàn bộ mã nguồn.<br>- Kiểm tra lại kiến trúc hệ thống.<br>- Hoàn thiện các chức năng còn thiếu. | 29/06/2026 | 29/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Thực hiện kiểm thử cuối cùng.<br>- Sửa các lỗi phát sinh trong quá trình kiểm thử.<br>- Đánh giá hiệu năng hệ thống. | 30/06/2026 | 30/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Hoàn thiện tài liệu kỹ thuật.<br>- Cập nhật sơ đồ kiến trúc AWS.<br>- Hoàn thành tài liệu hướng dẫn triển khai hệ thống. | 01/07/2026 | 01/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Viết báo cáo thực tập song ngữ.<br>- Hoàn thiện Proposal, Worklog và Blog.<br>- Chuẩn bị Slide trình bày. | 02/07/2026 | 03/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Demo dự án với Mentor.<br>- Nhận góp ý và chỉnh sửa hệ thống.<br>- Cập nhật tài liệu theo phản hồi. | 04/07/2026 | 04/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Tổng kết toàn bộ quá trình thực tập.<br>- Hoàn thiện báo cáo cuối cùng.<br>- Chuẩn bị nộp báo cáo và các tài liệu liên quan. | 05/07/2026 | 05/07/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

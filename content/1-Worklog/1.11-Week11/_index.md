@@ -21,12 +21,12 @@ pre: " <b> 1.11. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Review the entire source code.<br>- Verify the system architecture.<br>- Complete any remaining features. | 29/06/2026 | 29/06/2026 | Project Documentation |
-| Tuesday | - Perform final system testing.<br>- Fix issues identified during testing.<br>- Evaluate system performance. | 30/06/2026 | 30/06/2026 | Testing Documentation |
-| Wednesday | - Finalize the technical documentation.<br>- Update the AWS architecture diagram.<br>- Complete the deployment guide. | 01/07/2026 | 01/07/2026 | AWS Architecture Center |
-| Thursday | - Complete the bilingual internship report.<br>- Finalize the Proposal, Worklogs, and Blog posts.<br>- Prepare the presentation slides. | 02/07/2026 | 03/07/2026 | Internship Report Template |
-| Friday | - Demonstrate the project to the mentor.<br>- Collect feedback and improve the system.<br>- Update documentation based on the mentor's comments. | 04/07/2026 | 04/07/2026 | Mentor Feedback |
-| Sunday | - Summarize the entire internship journey.<br>- Complete the final report.<br>- Prepare all required documents for submission. | 05/07/2026 | 05/07/2026 | Internship Documentation |
+| Monday | - Review the entire source code.<br>- Verify the system architecture.<br>- Complete any remaining features. | 29/06/2026 | 29/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Perform final system testing.<br>- Fix issues identified during testing.<br>- Evaluate system performance. | 30/06/2026 | 30/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Finalize the technical documentation.<br>- Update the AWS architecture diagram.<br>- Complete the deployment guide. | 01/07/2026 | 01/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Complete the bilingual internship report.<br>- Finalize the Proposal, Worklogs, and Blog posts.<br>- Prepare the presentation slides. | 02/07/2026 | 03/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Demonstrate the project to the mentor.<br>- Collect feedback and improve the system.<br>- Update documentation based on the mentor's comments. | 04/07/2026 | 04/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Summarize the entire internship journey.<br>- Complete the final report.<br>- Prepare all required documents for submission. | 05/07/2026 | 05/07/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

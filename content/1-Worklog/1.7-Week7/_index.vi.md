@@ -22,12 +22,12 @@ pre: " <b> 1.7. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Bắt đầu Lab14.<br>- Tìm hiểu Amazon ECS.<br>- Làm quen với Cluster, Task Definition, Task và Service. | 01/06/2026 | 01/06/2026 | Amazon ECS Documentation |
-| Thứ 3 | - Tìm hiểu AWS Fargate.<br>- Triển khai ứng dụng Container mà không cần quản lý EC2.<br>- So sánh ECS EC2 Launch Type và Fargate Launch Type. | 02/06/2026 | 02/06/2026 | AWS Fargate Documentation |
-| Thứ 4 | - Kết nối Amazon ECS với Amazon ECR.<br>- Pull Docker Image từ Amazon ECR.<br>- Triển khai ứng dụng Container lên ECS Cluster. | 03/06/2026 | 03/06/2026 | Amazon ECR Documentation |
-| Thứ 5 | - Bắt đầu Lab15.<br>- Cấu hình Application Load Balancer (ALB).<br>- Thiết lập Target Group và Listener.<br>- Kiểm tra khả năng truy cập ứng dụng. | 04/06/2026 | 05/06/2026 | Elastic Load Balancing Documentation |
-| Thứ 6 | - Tìm hiểu AWS Cloud Map.<br>- Thực hành Service Discovery.<br>- Tìm hiểu Blue/Green Deployment.<br>- Quan sát quy trình cập nhật ứng dụng mà không gây gián đoạn dịch vụ. | 06/06/2026 | 06/06/2026 | AWS Cloud Map Documentation |
-| Chủ nhật | - Hoàn thành Lab14 và Lab15.<br>- Tổng hợp kiến thức tuần.<br>- Chuẩn bị nội dung cho tuần tiếp theo. | 07/06/2026 | 07/06/2026 | AWS Study Group |
+| Thứ 2 | - Bắt đầu Lab14.<br>- Tìm hiểu Amazon ECS.<br>- Làm quen với Cluster, Task Definition, Task và Service. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Tìm hiểu AWS Fargate.<br>- Triển khai ứng dụng Container mà không cần quản lý EC2.<br>- So sánh ECS EC2 Launch Type và Fargate Launch Type. | 02/06/2026 | 02/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Kết nối Amazon ECS với Amazon ECR.<br>- Pull Docker Image từ Amazon ECR.<br>- Triển khai ứng dụng Container lên ECS Cluster. | 03/06/2026 | 03/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Bắt đầu Lab15.<br>- Cấu hình Application Load Balancer (ALB).<br>- Thiết lập Target Group và Listener.<br>- Kiểm tra khả năng truy cập ứng dụng. | 04/06/2026 | 05/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Tìm hiểu AWS Cloud Map.<br>- Thực hành Service Discovery.<br>- Tìm hiểu Blue/Green Deployment.<br>- Quan sát quy trình cập nhật ứng dụng mà không gây gián đoạn dịch vụ. | 06/06/2026 | 06/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Hoàn thành Lab14 và Lab15.<br>- Tổng hợp kiến thức tuần.<br>- Chuẩn bị nội dung cho tuần tiếp theo. | 07/06/2026 | 07/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

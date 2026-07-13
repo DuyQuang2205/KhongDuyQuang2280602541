@@ -23,12 +23,12 @@ pre: " <b> 1.7. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Start Lab14.<br>- Learn Amazon ECS.<br>- Explore Clusters, Task Definitions, Tasks, and Services. | 01/06/2026 | 01/06/2026 | Amazon ECS Documentation |
-| Tuesday | - Learn AWS Fargate.<br>- Deploy containerized applications without managing EC2 instances.<br>- Compare ECS EC2 Launch Type and Fargate Launch Type. | 02/06/2026 | 02/06/2026 | AWS Fargate Documentation |
-| Wednesday | - Integrate Amazon ECS with Amazon ECR.<br>- Pull Docker Images from Amazon ECR.<br>- Deploy containerized applications to an ECS Cluster. | 03/06/2026 | 03/06/2026 | Amazon ECR Documentation |
-| Thursday | - Start Lab15.<br>- Configure an Application Load Balancer.<br>- Create Target Groups and Listener Rules.<br>- Test application accessibility. | 04/06/2026 | 05/06/2026 | Elastic Load Balancing Documentation |
-| Friday | - Learn AWS Cloud Map.<br>- Practice Service Discovery.<br>- Study Blue/Green Deployment.<br>- Observe application updates with minimal downtime. | 06/06/2026 | 06/06/2026 | AWS Cloud Map Documentation |
-| Sunday | - Complete Lab14 and Lab15.<br>- Review the week's knowledge.<br>- Prepare the study plan for Week 8. | 07/06/2026 | 07/06/2026 | AWS Study Group |
+| Monday | - Start Lab14.<br>- Learn Amazon ECS.<br>- Explore Clusters, Task Definitions, Tasks, and Services. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Learn AWS Fargate.<br>- Deploy containerized applications without managing EC2 instances.<br>- Compare ECS EC2 Launch Type and Fargate Launch Type. | 02/06/2026 | 02/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Integrate Amazon ECS with Amazon ECR.<br>- Pull Docker Images from Amazon ECR.<br>- Deploy containerized applications to an ECS Cluster. | 03/06/2026 | 03/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Start Lab15.<br>- Configure an Application Load Balancer.<br>- Create Target Groups and Listener Rules.<br>- Test application accessibility. | 04/06/2026 | 05/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learn AWS Cloud Map.<br>- Practice Service Discovery.<br>- Study Blue/Green Deployment.<br>- Observe application updates with minimal downtime. | 06/06/2026 | 06/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Complete Lab14 and Lab15.<br>- Review the week's knowledge.<br>- Prepare the study plan for Week 8. | 07/06/2026 | 07/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

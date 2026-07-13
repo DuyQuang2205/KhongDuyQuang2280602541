@@ -23,11 +23,11 @@ pre: " <b> 1.2. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Review the knowledge learned in Week 1.<br>- Start Lab04.<br>- Learn the basic architecture of deploying a web application on AWS.<br>- Review VPC, Public Subnet, and Security Group concepts. | 27/04/2026 | 27/04/2026 | AWS Study Group Lab04 |
-| Tuesday | - Continue Lab04.<br>- Launch an EC2 instance.<br>- Configure Security Group rules.<br>- Practice connecting to EC2 through SSH. | 28/04/2026 | 28/04/2026 | AWS EC2 Documentation |
-| Wednesday | - Complete Lab05.<br>- Learn about Amazon RDS.<br>- Create a MySQL database on Amazon RDS.<br>- Connect the EC2 instance to the RDS database and test the connection. | 29/04/2026 | 30/04/2026 | AWS RDS Documentation |
-| Friday | - Start Lab06.<br>- Learn about Application Load Balancer.<br>- Configure Auto Scaling Group.<br>- Create a Launch Template for EC2 instances. | 01/05/2026 | 02/05/2026 | AWS Auto Scaling Documentation |
-| Sunday | - Test Auto Scaling behavior.<br>- Monitor EC2 resources with Amazon CloudWatch.<br>- Review all implementation steps and complete Lab04, Lab05, and Lab06. | 03/05/2026 | 03/05/2026 | AWS CloudWatch Documentation |
+| Monday | - Review the knowledge learned in Week 1.<br>- Start Lab04.<br>- Learn the basic architecture of deploying a web application on AWS.<br>- Review VPC, Public Subnet, and Security Group concepts. | 27/04/2026 | 27/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Continue Lab04.<br>- Launch an EC2 instance.<br>- Configure Security Group rules.<br>- Practice connecting to EC2 through SSH. | 28/04/2026 | 28/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Complete Lab05.<br>- Learn about Amazon RDS.<br>- Create a MySQL database on Amazon RDS.<br>- Connect the EC2 instance to the RDS database and test the connection. | 29/04/2026 | 30/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Start Lab06.<br>- Learn about Application Load Balancer.<br>- Configure Auto Scaling Group.<br>- Create a Launch Template for EC2 instances. | 01/05/2026 | 02/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Test Auto Scaling behavior.<br>- Monitor EC2 resources with Amazon CloudWatch.<br>- Review all implementation steps and complete Lab04, Lab05, and Lab06. | 03/05/2026 | 03/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

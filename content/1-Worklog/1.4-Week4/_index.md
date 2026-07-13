@@ -22,12 +22,12 @@ pre: " <b> 1.4. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Start Lab08.<br>- Learn Amazon Route 53.<br>- Study DNS, Hosted Zones, and Record Sets. | 11/05/2026 | 11/05/2026 | AWS Route 53 Documentation |
-| Tuesday | - Continue Lab08.<br>- Learn Hybrid DNS.<br>- Configure Route 53 and test DNS resolution. | 12/05/2026 | 12/05/2026 | AWS Route 53 Documentation |
-| Wednesday | - Start Lab09.<br>- Learn AWS CloudFormation.<br>- Study the Infrastructure as Code (IaC) concept. | 13/05/2026 | 13/05/2026 | AWS CloudFormation Documentation |
-| Thursday | - Continue Lab09.<br>- Deploy AWS resources using CloudFormation Templates.<br>- Learn Stack creation and Stack updates. | 14/05/2026 | 15/05/2026 | AWS CloudFormation Documentation |
-| Friday | - Learn Amazon CloudWatch.<br>- Practice using CloudWatch Logs, Dashboard, and Alarm.<br>- Monitor EC2 and RDS resources. | 16/05/2026 | 16/05/2026 | AWS CloudWatch Documentation |
-| Sunday | - Complete Lab08 and Lab09.<br>- Review the week's knowledge.<br>- Prepare the learning plan for the following week. | 17/05/2026 | 17/05/2026 | AWS Study Group |
+| Monday | - Start Lab08.<br>- Learn Amazon Route 53.<br>- Study DNS, Hosted Zones, and Record Sets. | 11/05/2026 | 11/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Continue Lab08.<br>- Learn Hybrid DNS.<br>- Configure Route 53 and test DNS resolution. | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Start Lab09.<br>- Learn AWS CloudFormation.<br>- Study the Infrastructure as Code (IaC) concept. | 13/05/2026 | 13/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Continue Lab09.<br>- Deploy AWS resources using CloudFormation Templates.<br>- Learn Stack creation and Stack updates. | 14/05/2026 | 15/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learn Amazon CloudWatch.<br>- Practice using CloudWatch Logs, Dashboard, and Alarm.<br>- Monitor EC2 and RDS resources. | 16/05/2026 | 16/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Complete Lab08 and Lab09.<br>- Review the week's knowledge.<br>- Prepare the learning plan for the following week. | 17/05/2026 | 17/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

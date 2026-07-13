@@ -22,12 +22,12 @@ pre: " <b> 1.10. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Review all system features.<br>- Verify event management and registration functions.<br>- Record issues for further fixes. | 22/06/2026 | 22/06/2026 | Project Documentation |
-| Tuesday | - Fix backend issues.<br>- Optimize APIs and data processing.<br>- Verify the connection to Amazon RDS. | 23/06/2026 | 23/06/2026 | Spring Boot Documentation |
-| Wednesday | - Improve the frontend interface.<br>- Review user experience.<br>- Fix UI issues and API integration problems. | 24/06/2026 | 24/06/2026 | React Documentation |
-| Thursday | - Perform comprehensive system testing.<br>- Execute functional test cases.<br>- Verify system stability under multiple user requests. | 25/06/2026 | 26/06/2026 | Testing Documentation |
-| Friday | - Monitor the system using Amazon CloudWatch.<br>- Review logs and optimize EC2 configuration.<br>- Verify Security Groups and security settings. | 27/06/2026 | 27/06/2026 | AWS CloudWatch Documentation |
-| Sunday | - Finalize deployment documentation.<br>- Summarize weekly progress.<br>- Prepare the project report and the plan for the following week. | 28/06/2026 | 28/06/2026 | Internship Report |
+| Monday | - Review all system features.<br>- Verify event management and registration functions.<br>- Record issues for further fixes. | 22/06/2026 | 22/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Fix backend issues.<br>- Optimize APIs and data processing.<br>- Verify the connection to Amazon RDS. | 23/06/2026 | 23/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Improve the frontend interface.<br>- Review user experience.<br>- Fix UI issues and API integration problems. | 24/06/2026 | 24/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Perform comprehensive system testing.<br>- Execute functional test cases.<br>- Verify system stability under multiple user requests. | 25/06/2026 | 26/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Monitor the system using Amazon CloudWatch.<br>- Review logs and optimize EC2 configuration.<br>- Verify Security Groups and security settings. | 27/06/2026 | 27/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Finalize deployment documentation.<br>- Summarize weekly progress.<br>- Prepare the project report and the plan for the following week. | 28/06/2026 | 28/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

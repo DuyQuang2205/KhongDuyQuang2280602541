@@ -22,12 +22,12 @@ pre: " <b> 1.6. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Start Lab12.<br>- Learn Docker Fundamentals.<br>- Install Docker Desktop.<br>- Explore the Docker Engine architecture. | 25/05/2026 | 25/05/2026 | Docker Documentation |
-| Tuesday | - Practice working with Docker Images and Docker Containers.<br>- Learn Dockerfile syntax.<br>- Build the first Docker Image and run a container. | 26/05/2026 | 26/05/2026 | Docker Documentation |
-| Wednesday | - Learn Docker Hub.<br>- Practice pulling and pushing Docker Images.<br>- Manage image repositories. | 27/05/2026 | 27/05/2026 | Docker Hub Documentation |
-| Thursday | - Start Lab13.<br>- Learn Amazon Elastic Container Registry (Amazon ECR).<br>- Create an ECR Repository.<br>- Push Docker Images to Amazon ECR. | 28/05/2026 | 29/05/2026 | Amazon ECR Documentation |
-| Friday | - Learn AWS VM Import/Export.<br>- Study the VM migration process.<br>- Compare traditional Virtual Machines with Containers. | 30/05/2026 | 30/05/2026 | AWS VM Import/Export Documentation |
-| Sunday | - Complete Lab12 and Lab13.<br>- Review Docker and Amazon ECR concepts.<br>- Prepare the learning plan for Week 7. | 31/05/2026 | 31/05/2026 | AWS Study Group |
+| Monday | - Start Lab12.<br>- Learn Docker Fundamentals.<br>- Install Docker Desktop.<br>- Explore the Docker Engine architecture. | 25/05/2026 | 25/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Practice working with Docker Images and Docker Containers.<br>- Learn Dockerfile syntax.<br>- Build the first Docker Image and run a container. | 26/05/2026 | 26/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Learn Docker Hub.<br>- Practice pulling and pushing Docker Images.<br>- Manage image repositories. | 27/05/2026 | 27/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Start Lab13.<br>- Learn Amazon Elastic Container Registry (Amazon ECR).<br>- Create an ECR Repository.<br>- Push Docker Images to Amazon ECR. | 28/05/2026 | 29/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learn AWS VM Import/Export.<br>- Study the VM migration process.<br>- Compare traditional Virtual Machines with Containers. | 30/05/2026 | 30/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Complete Lab12 and Lab13.<br>- Review Docker and Amazon ECR concepts.<br>- Prepare the learning plan for Week 7. | 31/05/2026 | 31/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

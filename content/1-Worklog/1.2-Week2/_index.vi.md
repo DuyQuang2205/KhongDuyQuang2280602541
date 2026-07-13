@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ## Mục tiêu tuần 2
 
@@ -27,11 +24,11 @@ pre: " <b> 1.2. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Ôn tập kiến thức tuần trước.<br>- Bắt đầu Lab04.<br>- Tìm hiểu kiến trúc triển khai Web Application trên AWS.<br>- Làm quen với VPC, Public Subnet và Security Group. | 27/04/2026 | 27/04/2026 | AWS Study Group Lab04 |
-| Thứ 3 | - Tiếp tục Lab04.<br>- Khởi tạo EC2 Instance.<br>- Cấu hình Security Group.<br>- Thực hành truy cập EC2 qua SSH. | 28/04/2026 | 28/04/2026 | AWS EC2 Documentation |
-| Thứ 4 | - Hoàn thành Lab05.<br>- Tìm hiểu Amazon RDS.<br>- Khởi tạo cơ sở dữ liệu MySQL trên RDS.<br>- Kết nối EC2 với RDS và kiểm tra kết nối. | 29/04/2026 | 30/04/2026 | AWS RDS Documentation |
-| Thứ 5 | - Thực hiện Lab06.<br>- Tìm hiểu Elastic Load Balancer (ALB).<br>- Cấu hình Auto Scaling Group.<br>- Thiết lập Launch Template cho EC2. | 01/05/2026 | 02/05/2026 | AWS Auto Scaling Documentation |
-| Thứ 6 | - Thực hành kiểm thử Auto Scaling.<br>- Theo dõi hoạt động của EC2 thông qua CloudWatch.<br>- Tổng hợp kiến thức và hoàn thành Lab04, Lab05, Lab06. | 03/05/2026 | 03/05/2026 | AWS CloudWatch Documentation |
+| Thứ 2 | - Ôn tập kiến thức tuần trước.<br>- Bắt đầu Lab04.<br>- Tìm hiểu kiến trúc triển khai Web Application trên AWS.<br>- Làm quen với VPC, Public Subnet và Security Group. | 27/04/2026 | 27/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Tiếp tục Lab04.<br>- Khởi tạo EC2 Instance.<br>- Cấu hình Security Group.<br>- Thực hành truy cập EC2 qua SSH. | 28/04/2026 | 28/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Hoàn thành Lab05.<br>- Tìm hiểu Amazon RDS.<br>- Khởi tạo cơ sở dữ liệu MySQL trên RDS.<br>- Kết nối EC2 với RDS và kiểm tra kết nối. | 29/04/2026 | 30/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Thực hiện Lab06.<br>- Tìm hiểu Elastic Load Balancer (ALB).<br>- Cấu hình Auto Scaling Group.<br>- Thiết lập Launch Template cho EC2. | 01/05/2026 | 02/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Thực hành kiểm thử Auto Scaling.<br>- Theo dõi hoạt động của EC2 thông qua CloudWatch.<br>- Tổng hợp kiến thức và hoàn thành Lab04, Lab05, Lab06. | 03/05/2026 | 03/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

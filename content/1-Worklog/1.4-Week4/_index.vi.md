@@ -22,12 +22,12 @@ pre: " <b> 1.4. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Bắt đầu Lab08.<br>- Tìm hiểu Amazon Route 53.<br>- Học về DNS, Hosted Zone và Record Set. | 11/05/2026 | 11/05/2026 | AWS Route 53 Documentation |
-| Thứ 3 | - Tiếp tục Lab08.<br>- Tìm hiểu Hybrid DNS.<br>- Thực hành cấu hình Route 53 và kiểm tra phân giải tên miền. | 12/05/2026 | 12/05/2026 | AWS Route 53 Documentation |
-| Thứ 4 | - Bắt đầu Lab09.<br>- Học AWS CloudFormation.<br>- Tìm hiểu khái niệm Infrastructure as Code (IaC). | 13/05/2026 | 13/05/2026 | AWS CloudFormation Documentation |
-| Thứ 5 | - Tiếp tục Lab09.<br>- Thực hành triển khai tài nguyên AWS bằng CloudFormation Template.<br>- Tìm hiểu Stack và Stack Update. | 14/05/2026 | 15/05/2026 | AWS CloudFormation Documentation |
-| Thứ 6 | - Học Amazon CloudWatch.<br>- Thực hành CloudWatch Logs, Dashboard và Alarm.<br>- Theo dõi tài nguyên EC2 và RDS. | 16/05/2026 | 16/05/2026 | AWS CloudWatch Documentation |
-| Chủ nhật | - Hoàn thành Lab08 và Lab09.<br>- Tổng hợp kiến thức đã học.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 17/05/2026 | 17/05/2026 | AWS Study Group |
+| Thứ 2 | - Bắt đầu Lab08.<br>- Tìm hiểu Amazon Route 53.<br>- Học về DNS, Hosted Zone và Record Set. | 11/05/2026 | 11/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Tiếp tục Lab08.<br>- Tìm hiểu Hybrid DNS.<br>- Thực hành cấu hình Route 53 và kiểm tra phân giải tên miền. | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Bắt đầu Lab09.<br>- Học AWS CloudFormation.<br>- Tìm hiểu khái niệm Infrastructure as Code (IaC). | 13/05/2026 | 13/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Tiếp tục Lab09.<br>- Thực hành triển khai tài nguyên AWS bằng CloudFormation Template.<br>- Tìm hiểu Stack và Stack Update. | 14/05/2026 | 15/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Học Amazon CloudWatch.<br>- Thực hành CloudWatch Logs, Dashboard và Alarm.<br>- Theo dõi tài nguyên EC2 và RDS. | 16/05/2026 | 16/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Hoàn thành Lab08 và Lab09.<br>- Tổng hợp kiến thức đã học.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 17/05/2026 | 17/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

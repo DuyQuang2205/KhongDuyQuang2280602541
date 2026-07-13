@@ -22,12 +22,12 @@ pre: " <b> 1.6. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Bắt đầu Lab12.<br>- Tìm hiểu Docker Fundamentals.<br>- Cài đặt Docker Desktop.<br>- Làm quen với kiến trúc Docker Engine. | 25/05/2026 | 25/05/2026 | Docker Documentation |
-| Thứ 3 | - Thực hành Docker Image và Docker Container.<br>- Tìm hiểu Dockerfile.<br>- Build Image và chạy Container đầu tiên. | 26/05/2026 | 26/05/2026 | Docker Documentation |
-| Thứ 4 | - Làm quen với Docker Hub.<br>- Pull và Push Docker Image.<br>- Quản lý Docker Image thông qua Registry. | 27/05/2026 | 27/05/2026 | Docker Hub Documentation |
-| Thứ 5 | - Bắt đầu Lab13.<br>- Tìm hiểu Amazon Elastic Container Registry (Amazon ECR).<br>- Tạo Repository trên ECR.<br>- Push Docker Image lên Amazon ECR. | 28/05/2026 | 29/05/2026 | Amazon ECR Documentation |
-| Thứ 6 | - Tìm hiểu AWS VM Import/Export.<br>- Học quy trình Import và Export Virtual Machine.<br>- So sánh VM truyền thống và Container. | 30/05/2026 | 30/05/2026 | AWS VM Import/Export Documentation |
-| Chủ nhật | - Hoàn thành Lab12 và Lab13.<br>- Ôn tập kiến thức Docker và Amazon ECR.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 31/05/2026 | 31/05/2026 | AWS Study Group |
+| Thứ 2 | - Bắt đầu Lab12.<br>- Tìm hiểu Docker Fundamentals.<br>- Cài đặt Docker Desktop.<br>- Làm quen với kiến trúc Docker Engine. | 25/05/2026 | 25/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Thực hành Docker Image và Docker Container.<br>- Tìm hiểu Dockerfile.<br>- Build Image và chạy Container đầu tiên. | 26/05/2026 | 26/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Làm quen với Docker Hub.<br>- Pull và Push Docker Image.<br>- Quản lý Docker Image thông qua Registry. | 27/05/2026 | 27/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Bắt đầu Lab13.<br>- Tìm hiểu Amazon Elastic Container Registry (Amazon ECR).<br>- Tạo Repository trên ECR.<br>- Push Docker Image lên Amazon ECR. | 28/05/2026 | 29/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Tìm hiểu AWS VM Import/Export.<br>- Học quy trình Import và Export Virtual Machine.<br>- So sánh VM truyền thống và Container. | 30/05/2026 | 30/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Hoàn thành Lab12 và Lab13.<br>- Ôn tập kiến thức Docker và Amazon ECR.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 31/05/2026 | 31/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

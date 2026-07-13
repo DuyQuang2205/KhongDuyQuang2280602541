@@ -24,12 +24,12 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Attend the official AWS Internship Kickoff session.<br>- Take notes on the internship objectives, timeline, regulations, and learning roadmap.<br>- Create a personal study schedule for the internship program. | 20/04/2026 | 20/04/2026 | FCAJ Bootcamp |
+| Monday | - Attend the official AWS Internship Kickoff session.<br>- Take notes on the internship objectives, timeline, regulations, and learning roadmap.<br>- Create a personal study schedule for the internship program. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 | Tuesday | - Explore the AWS Management Console.<br>- Learn how to search for AWS services.<br>- Practice switching between AWS Regions.<br>- Explore the Billing Dashboard and AWS Search Bar. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 | Wednesday | - Study the basic AWS infrastructure concepts.<br>&emsp;+ Region<br>&emsp;+ Availability Zone (AZ)<br>&emsp;+ Virtual Private Cloud (VPC) overview. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thursday | - Create an AWS account.<br>- Set up the AWS working environment.<br>- Review basic account settings and billing information. | 23/04/2026 | 23/04/2026 | AWS Management Console |
-| Friday | - Learn AWS Identity and Access Management (IAM).<br>&emsp;+ IAM Users<br>&emsp;+ IAM Groups<br>&emsp;+ IAM Roles<br>&emsp;+ IAM Policies<br>&emsp;+ Allow / Deny permissions<br>&emsp;+ Principle of Least Privilege. | 24/04/2026 | 25/04/2026 | AWS IAM Documentation |
-| Sunday | - Complete Lab02 and Lab03.<br>- Review the knowledge learned throughout the week.<br>- Prepare the study plan and discussion topics for the following week. | 26/04/2026 | 26/04/2026 | AWS Study Group Labs |
+| Thursday | - Create an AWS account.<br>- Set up the AWS working environment.<br>- Review basic account settings and billing information. | 23/04/2026 | 23/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learn AWS Identity and Access Management (IAM).<br>&emsp;+ IAM Users<br>&emsp;+ IAM Groups<br>&emsp;+ IAM Roles<br>&emsp;+ IAM Policies<br>&emsp;+ Allow / Deny permissions<br>&emsp;+ Principle of Least Privilege. | 24/04/2026 | 25/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Complete Lab02 and Lab03.<br>- Review the knowledge learned throughout the week.<br>- Prepare the study plan and discussion topics for the following week. | 26/04/2026 | 26/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

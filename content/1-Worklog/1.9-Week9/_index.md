@@ -21,12 +21,12 @@ pre: " <b> 1.9. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Initialize the project.<br>- Create the source code repository.<br>- Configure the development environment and Git repository. | 15/06/2026 | 15/06/2026 | GitHub Documentation |
-| Tuesday | - Deploy the AWS infrastructure.<br>- Create a VPC, Public Subnet, Security Groups, and EC2 Instance.<br>- Verify server connectivity. | 16/06/2026 | 16/06/2026 | AWS EC2 Documentation |
-| Wednesday | - Create an Amazon RDS database.<br>- Configure the connection between EC2 and RDS.<br>- Initialize the project database. | 17/06/2026 | 17/06/2026 | Amazon RDS Documentation |
-| Thursday | - Deploy the backend application to EC2.<br>- Configure the runtime environment.<br>- Test the database connection. | 18/06/2026 | 19/06/2026 | Spring Boot Documentation |
-| Friday | - Deploy the frontend application.<br>- Test communication between the frontend and backend.<br>- Perform basic functional testing. | 20/06/2026 | 20/06/2026 | React Documentation |
-| Sunday | - Summarize deployment results.<br>- Record issues encountered during implementation.<br>- Prepare the development plan for the following week. | 21/06/2026 | 21/06/2026 | Project Documentation |
+| Monday | - Initialize the project.<br>- Create the source code repository.<br>- Configure the development environment and Git repository. | 15/06/2026 | 15/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Deploy the AWS infrastructure.<br>- Create a VPC, Public Subnet, Security Groups, and EC2 Instance.<br>- Verify server connectivity. | 16/06/2026 | 16/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Create an Amazon RDS database.<br>- Configure the connection between EC2 and RDS.<br>- Initialize the project database. | 17/06/2026 | 17/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Deploy the backend application to EC2.<br>- Configure the runtime environment.<br>- Test the database connection. | 18/06/2026 | 19/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Deploy the frontend application.<br>- Test communication between the frontend and backend.<br>- Perform basic functional testing. | 20/06/2026 | 20/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Summarize deployment results.<br>- Record issues encountered during implementation.<br>- Prepare the development plan for the following week. | 21/06/2026 | 21/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

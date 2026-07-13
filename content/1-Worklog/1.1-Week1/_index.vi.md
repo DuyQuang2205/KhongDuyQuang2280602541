@@ -24,12 +24,12 @@ pre: " <b> 1.1. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Tham gia buổi Kickoff chính thức của chương trình AWS.<br>- Ghi chú các nội dung quan trọng như mục tiêu, timeline, quy định và phương pháp học tập.<br>- Thiết lập lịch học và kế hoạch cá nhân cho toàn bộ chương trình thực tập. | 20/04/2026 | 20/04/2026 | FCAJ Bootcamp |
+| Thứ 2 | - Tham gia buổi Kickoff chính thức của chương trình AWS.<br>- Ghi chú các nội dung quan trọng như mục tiêu, timeline, quy định và phương pháp học tập.<br>- Thiết lập lịch học và kế hoạch cá nhân cho toàn bộ chương trình thực tập. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 | Thứ 3 | - Làm quen với AWS Management Console.<br>- Thực hành tìm kiếm các dịch vụ AWS.<br>- Tìm hiểu cách chuyển đổi Region.<br>- Làm quen với Billing Dashboard và thanh tìm kiếm của AWS Console. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 | Thứ 4 | - Học các khái niệm cơ bản của AWS.<br>&emsp;+ Region<br>&emsp;+ Availability Zone (AZ)<br>&emsp;+ Virtual Private Cloud (VPC) ở mức tổng quan. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 5 | - Tạo tài khoản AWS.<br>- Thiết lập môi trường làm việc trên AWS.<br>- Tìm hiểu thông tin tài khoản và Billing cơ bản. | 23/04/2026 | 23/04/2026 | AWS Management Console |
-| Thứ 6 | - Học dịch vụ IAM.<br>&emsp;+ IAM User<br>&emsp;+ IAM Group<br>&emsp;+ IAM Role<br>&emsp;+ IAM Policy<br>&emsp;+ Allow / Deny<br>&emsp;+ Nguyên tắc Least Privilege. | 24/04/2026 | 25/04/2026 | AWS IAM Documentation |
-| Chủ nhật | - Hoàn thành Lab02 và Lab03.<br>- Tổng hợp kiến thức đã học.<br>- Lập kế hoạch học tập cho tuần tiếp theo và chuẩn bị các câu hỏi cần trao đổi với Mentor. | 26/04/2026 | 26/04/2026 | AWS Study Group Labs |
+| Thứ 5 | - Tạo tài khoản AWS.<br>- Thiết lập môi trường làm việc trên AWS.<br>- Tìm hiểu thông tin tài khoản và Billing cơ bản. | 23/04/2026 | 23/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Học dịch vụ IAM.<br>&emsp;+ IAM User<br>&emsp;+ IAM Group<br>&emsp;+ IAM Role<br>&emsp;+ IAM Policy<br>&emsp;+ Allow / Deny<br>&emsp;+ Nguyên tắc Least Privilege. | 24/04/2026 | 25/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Hoàn thành Lab02 và Lab03.<br>- Tổng hợp kiến thức đã học.<br>- Lập kế hoạch học tập cho tuần tiếp theo và chuẩn bị các câu hỏi cần trao đổi với Mentor. | 26/04/2026 | 26/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

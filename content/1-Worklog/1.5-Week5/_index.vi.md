@@ -22,12 +22,12 @@ pre: " <b> 1.5. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Bắt đầu Lab10.<br>- Tìm hiểu Amazon EC2 Windows.<br>- Khởi tạo Windows EC2 Instance.<br>- Thực hành kết nối bằng Remote Desktop (RDP). | 18/05/2026 | 18/05/2026 | AWS EC2 Documentation |
-| Thứ 3 | - Tiếp tục Lab10.<br>- Làm quen với môi trường Windows Server trên AWS.<br>- Thực hành quản lý Windows Instance. | 19/05/2026 | 19/05/2026 | Microsoft Windows Server Documentation |
-| Thứ 4 | - Bắt đầu Lab11.<br>- Ôn tập AWS CLI.<br>- Thực hành quản lý EC2, S3 và IAM thông qua dòng lệnh. | 20/05/2026 | 20/05/2026 | AWS CLI Documentation |
-| Thứ 5 | - Tìm hiểu Amazon SNS.<br>- Tạo Topic.<br>- Đăng ký Email Subscription.<br>- Thực hành gửi Notification. | 21/05/2026 | 21/05/2026 | Amazon SNS Documentation |
-| Thứ 6 | - Học Troubleshooting trên AWS.<br>- Phân tích lỗi kết nối EC2.<br>- Kiểm tra Security Group, Route Table và IAM Permissions. | 22/05/2026 | 23/05/2026 | AWS Well-Architected Framework |
-| Chủ nhật | - Hoàn thành Lab10 và Lab11.<br>- Tổng hợp kiến thức.<br>- Chuẩn bị kế hoạch cho tuần tiếp theo. | 24/05/2026 | 24/05/2026 | AWS Study Group |
+| Thứ 2 | - Bắt đầu Lab10.<br>- Tìm hiểu Amazon EC2 Windows.<br>- Khởi tạo Windows EC2 Instance.<br>- Thực hành kết nối bằng Remote Desktop (RDP). | 18/05/2026 | 18/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Tiếp tục Lab10.<br>- Làm quen với môi trường Windows Server trên AWS.<br>- Thực hành quản lý Windows Instance. | 19/05/2026 | 19/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Bắt đầu Lab11.<br>- Ôn tập AWS CLI.<br>- Thực hành quản lý EC2, S3 và IAM thông qua dòng lệnh. | 20/05/2026 | 20/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Tìm hiểu Amazon SNS.<br>- Tạo Topic.<br>- Đăng ký Email Subscription.<br>- Thực hành gửi Notification. | 21/05/2026 | 21/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Học Troubleshooting trên AWS.<br>- Phân tích lỗi kết nối EC2.<br>- Kiểm tra Security Group, Route Table và IAM Permissions. | 22/05/2026 | 23/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Hoàn thành Lab10 và Lab11.<br>- Tổng hợp kiến thức.<br>- Chuẩn bị kế hoạch cho tuần tiếp theo. | 24/05/2026 | 24/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

@@ -22,12 +22,12 @@ pre: " <b> 1.8. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Phân tích yêu cầu của đề tài thực tập.<br>- Xác định các chức năng chính của hệ thống.<br>- Thảo luận với Mentor về phạm vi dự án. | 08/06/2026 | 08/06/2026 | Internship Requirement |
-| Thứ 3 | - Thiết kế kiến trúc tổng thể.<br>- Xác định các thành phần Frontend, Backend và Database.<br>- Phân tích luồng dữ liệu của hệ thống. | 09/06/2026 | 09/06/2026 | AWS Well-Architected Framework |
-| Thứ 4 | - Lựa chọn các dịch vụ AWS phù hợp.<br>- Xây dựng sơ đồ kiến trúc trên AWS.<br>- Phân tích các yêu cầu về bảo mật và khả năng mở rộng. | 10/06/2026 | 10/06/2026 | AWS Architecture Center |
-| Thứ 5 | - Chuẩn bị môi trường phát triển.<br>- Khởi tạo Source Code Repository.<br>- Cấu hình các công cụ hỗ trợ phát triển. | 11/06/2026 | 11/06/2026 | GitHub, VS Code |
-| Thứ 6 | - Thiết kế cơ sở dữ liệu.<br>- Xây dựng danh sách API dự kiến.<br>- Chuẩn bị tài liệu kỹ thuật ban đầu. | 12/06/2026 | 13/06/2026 | Project Design Documents |
-| Chủ nhật | - Tổng hợp kết quả phân tích.<br>- Hoàn thiện tài liệu thiết kế ban đầu.<br>- Lập kế hoạch triển khai cho tuần tiếp theo. | 14/06/2026 | 14/06/2026 | AWS Study Group |
+| Thứ 2 | - Phân tích yêu cầu của đề tài thực tập.<br>- Xác định các chức năng chính của hệ thống.<br>- Thảo luận với Mentor về phạm vi dự án. | 08/06/2026 | 08/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Thiết kế kiến trúc tổng thể.<br>- Xác định các thành phần Frontend, Backend và Database.<br>- Phân tích luồng dữ liệu của hệ thống. | 09/06/2026 | 09/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Lựa chọn các dịch vụ AWS phù hợp.<br>- Xây dựng sơ đồ kiến trúc trên AWS.<br>- Phân tích các yêu cầu về bảo mật và khả năng mở rộng. | 10/06/2026 | 10/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Chuẩn bị môi trường phát triển.<br>- Khởi tạo Source Code Repository.<br>- Cấu hình các công cụ hỗ trợ phát triển. | 11/06/2026 | 11/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Thiết kế cơ sở dữ liệu.<br>- Xây dựng danh sách API dự kiến.<br>- Chuẩn bị tài liệu kỹ thuật ban đầu. | 12/06/2026 | 13/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Tổng hợp kết quả phân tích.<br>- Hoàn thiện tài liệu thiết kế ban đầu.<br>- Lập kế hoạch triển khai cho tuần tiếp theo. | 14/06/2026 | 14/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

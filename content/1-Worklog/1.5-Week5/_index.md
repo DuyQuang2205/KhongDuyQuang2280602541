@@ -22,12 +22,12 @@ pre: " <b> 1.5. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |------|------|------------|-----------------|--------------------|
-| Monday | - Start Lab10.<br>- Learn Amazon EC2 Windows.<br>- Launch a Windows EC2 instance.<br>- Practice Remote Desktop (RDP) connection. | 18/05/2026 | 18/05/2026 | AWS EC2 Documentation |
-| Tuesday | - Continue Lab10.<br>- Explore the Windows Server environment on AWS.<br>- Practice managing Windows instances. | 19/05/2026 | 19/05/2026 | Microsoft Windows Server Documentation |
-| Wednesday | - Start Lab11.<br>- Review AWS CLI.<br>- Practice managing EC2, S3, and IAM resources using the command line. | 20/05/2026 | 20/05/2026 | AWS CLI Documentation |
-| Thursday | - Learn Amazon SNS.<br>- Create an SNS Topic.<br>- Configure Email Subscription.<br>- Practice sending notifications. | 21/05/2026 | 21/05/2026 | Amazon SNS Documentation |
-| Friday | - Learn AWS troubleshooting techniques.<br>- Investigate EC2 connectivity issues.<br>- Review Security Groups, Route Tables, and IAM permissions. | 22/05/2026 | 23/05/2026 | AWS Well-Architected Framework |
-| Sunday | - Complete Lab10 and Lab11.<br>- Review all topics learned.<br>- Prepare the study plan for Week 6. | 24/05/2026 | 24/05/2026 | AWS Study Group |
+| Monday | - Start Lab10.<br>- Learn Amazon EC2 Windows.<br>- Launch a Windows EC2 instance.<br>- Practice Remote Desktop (RDP) connection. | 18/05/2026 | 18/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Continue Lab10.<br>- Explore the Windows Server environment on AWS.<br>- Practice managing Windows instances. | 19/05/2026 | 19/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Start Lab11.<br>- Review AWS CLI.<br>- Practice managing EC2, S3, and IAM resources using the command line. | 20/05/2026 | 20/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Learn Amazon SNS.<br>- Create an SNS Topic.<br>- Configure Email Subscription.<br>- Practice sending notifications. | 21/05/2026 | 21/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learn AWS troubleshooting techniques.<br>- Investigate EC2 connectivity issues.<br>- Review Security Groups, Route Tables, and IAM permissions. | 22/05/2026 | 23/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Sunday | - Complete Lab10 and Lab11.<br>- Review all topics learned.<br>- Prepare the study plan for Week 6. | 24/05/2026 | 24/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 

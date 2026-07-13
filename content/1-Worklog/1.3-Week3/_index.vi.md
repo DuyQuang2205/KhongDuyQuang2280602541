@@ -21,12 +21,12 @@ pre: " <b> 1.3. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| Thứ 2 | - Ôn tập lại nội dung Lab06.<br>- Kiểm tra kiến thức về Auto Scaling Group, Load Balancer và CloudWatch.<br>- Ghi chú các khái niệm chưa hiểu rõ để trao đổi thêm. | 04/05/2026 | 04/05/2026 | AWS Study Group Lab06 |
-| Thứ 3 | - Hoàn thành các phần còn lại của Lab06.<br>- Thực hành kiểm tra khả năng tự động mở rộng tài nguyên.<br>- Theo dõi trạng thái EC2 thông qua CloudWatch. | 05/05/2026 | 05/05/2026 | AWS Auto Scaling Documentation |
-| Thứ 4 | - Bắt đầu Lab07.<br>- Tìm hiểu cách vận hành hệ thống Web thực tế trên AWS.<br>- Phân tích các thành phần chính trong kiến trúc triển khai. | 06/05/2026 | 06/05/2026 | AWS Study Group Lab07 |
-| Thứ 5 | - Tiếp tục Lab07.<br>- Tìm hiểu cách tối ưu tài nguyên và quản lý chi phí.<br>- Ghi chú các bước triển khai quan trọng trong Lab. | 07/05/2026 | 08/05/2026 | AWS Cost Management |
-| Thứ 6 | - Tham gia sự kiện FCAJ Community Day.<br>- Học thêm về Automated Prompt Engineering, AI frameworks và mindset trong doanh nghiệp.<br>- Ghi chú các bài học thực tế từ diễn giả. | 09/05/2026 | 09/05/2026 | FCAJ Community Day |
-| Chủ nhật | - Tổng hợp lại kiến thức tuần 3.<br>- Hoàn thành Lab06 và Lab07.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 10/05/2026 | 10/05/2026 | FCAJ Bootcamp |
+| Thứ 2 | - Ôn tập lại nội dung Lab06.<br>- Kiểm tra kiến thức về Auto Scaling Group, Load Balancer và CloudWatch.<br>- Ghi chú các khái niệm chưa hiểu rõ để trao đổi thêm. | 04/05/2026 | 04/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 3 | - Hoàn thành các phần còn lại của Lab06.<br>- Thực hành kiểm tra khả năng tự động mở rộng tài nguyên.<br>- Theo dõi trạng thái EC2 thông qua CloudWatch. | 05/05/2026 | 05/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 4 | - Bắt đầu Lab07.<br>- Tìm hiểu cách vận hành hệ thống Web thực tế trên AWS.<br>- Phân tích các thành phần chính trong kiến trúc triển khai. | 06/05/2026 | 06/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 5 | - Tiếp tục Lab07.<br>- Tìm hiểu cách tối ưu tài nguyên và quản lý chi phí.<br>- Ghi chú các bước triển khai quan trọng trong Lab. | 07/05/2026 | 08/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ 6 | - Tham gia sự kiện FCAJ Community Day.<br>- Học thêm về Automated Prompt Engineering, AI frameworks và mindset trong doanh nghiệp.<br>- Ghi chú các bài học thực tế từ diễn giả. | 09/05/2026 | 09/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Chủ nhật | - Tổng hợp lại kiến thức tuần 3.<br>- Hoàn thành Lab06 và Lab07.<br>- Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 10/05/2026 | 10/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
