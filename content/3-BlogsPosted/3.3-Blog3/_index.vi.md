@@ -1,47 +1,154 @@
 ---
 title: "Blog 3"
-date: 2026-07-05
+date: "2026-07-05"
 weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
+ 
+# WEB SEARCH TRONG AMAZON BEDROCK AGENTCORE
 
-# GỠ LỖI AI AGENTS TRONG MÔI TRƯỜNG PRODUCTION VỚI AMAZON BEDROCK AGENTCORE OBSERVABILITY
+Các **Large Language Models (LLMs)** ngày càng trở thành thành phần cốt lõi trong nhiều ứng dụng AI hiện đại. Tuy nhiên, một hạn chế lớn của các mô hình này là chỉ có thể trả lời dựa trên dữ liệu đã được sử dụng trong quá trình huấn luyện. Khi người dùng đặt các câu hỏi về tin tức mới nhất, giá cổ phiếu theo thời gian thực, các mô hình AI vừa được phát hành hoặc những thông báo mới từ AWS, AI Agent sẽ không thể cung cấp câu trả lời chính xác nếu không có khả năng truy cập thông tin bên ngoài.
 
-Khi các AI Agent ngày càng được triển khai rộng rãi trong môi trường Production, việc giám sát và gỡ lỗi hệ thống trở nên khó khăn hơn rất nhiều so với các ứng dụng truyền thống. Đối với những ứng dụng thông thường, khi xảy ra sự cố hệ thống thường sinh ra Exception, HTTP Status Code hoặc các thông báo lỗi rõ ràng để hỗ trợ quá trình điều tra. Tuy nhiên, AI Agent lại có thể hoàn thành một yêu cầu thành công nhưng vẫn đưa ra câu trả lời sai, lựa chọn công cụ không phù hợp hoặc rơi vào các vòng lặp suy luận mà không hề phát sinh bất kỳ cảnh báo lỗi nào.
+Để giải quyết vấn đề này, AWS giới thiệu **Web Search trong Amazon Bedrock AgentCore** – một dịch vụ tìm kiếm web được quản lý hoàn toàn (**Fully Managed**), cho phép AI Agent truy xuất thông tin theo thời gian thực từ Internet mà không cần tích hợp các dịch vụ tìm kiếm của bên thứ ba như Google Search API, Bing Search API hay SerpAPI.
 
-Những lỗi "âm thầm" này khiến việc gỡ lỗi trong môi trường Production trở nên phức tạp hơn vì các giải pháp giám sát truyền thống chỉ cho biết rằng Agent đã hoàn thành yêu cầu, nhưng không thể giải thích **tại sao** Agent lại đưa ra quyết định như vậy. Các nhà phát triển thường biết rằng hệ thống đang hoạt động không đúng, nhưng lại thiếu khả năng quan sát toàn bộ quá trình suy luận bên trong của AI Agent.
+## Các điểm chính cần nắm
 
-Amazon Bedrock AgentCore Observability được xây dựng nhằm giải quyết vấn đề này bằng cách cung cấp khả năng quan sát toàn diện mọi giai đoạn trong quá trình thực thi của AI Agent. Thay vì chỉ theo dõi kết quả cuối cùng, dịch vụ cho phép phân tích từng bước suy luận (Reasoning), các lần gọi Tool, quá trình truy xuất Memory, độ trễ, số lượng Token tiêu thụ và toàn bộ Execution Trace. Điều này giúp các nhóm phát triển nhanh chóng xác định nguyên nhân gốc rễ của sự cố và nâng cao độ tin cậy của các ứng dụng AI trong môi trường Production.
+* Cho phép AI Agent truy cập thông tin mới nhất từ Internet theo thời gian thực.
+* Không cần tích hợp Google Search API, Bing Search API hoặc SerpAPI.
+* AWS quản lý toàn bộ quá trình lập chỉ mục, tìm kiếm và xử lý kết quả.
+* Hỗ trợ **Model Context Protocol (MCP)** giúp tích hợp dễ dàng với các AI Framework hiện đại.
+* Hoạt động thông qua **Amazon Bedrock AgentCore Gateway**.
+* Toàn bộ truy vấn của người dùng được xử lý bên trong hạ tầng AWS, giúp nâng cao tính bảo mật và quyền riêng tư.
+* Sử dụng **Semantic Snippet Extraction** để chỉ trả về những đoạn nội dung liên quan nhất với truy vấn.
+* Tích hợp **Knowledge Graph** nhằm nâng cao độ chính xác cho các câu hỏi liên quan đến thực thể (Entity).
 
-Các điểm chính cần nắm:
+Tính năng này đặc biệt phù hợp với AI Chatbot, trợ lý ảo, Research Agent, Financial Assistant, hệ thống tổng hợp tin tức hoặc bất kỳ ứng dụng AI nào cần sử dụng dữ liệu được cập nhật liên tục theo thời gian thực.
 
-* Amazon Bedrock AgentCore Observability cung cấp ba lớp giám sát gồm **Metrics**, **Traces** và **Structured Logs**.
-* Tích hợp trực tiếp với Amazon CloudWatch để theo dõi thời gian phản hồi, lượng Token sử dụng, số lượng phiên làm việc và tỷ lệ lỗi theo thời gian thực.
-* Hỗ trợ OpenTelemetry (OTEL), cho phép xuất dữ liệu giám sát đến Amazon CloudWatch, Grafana, Datadog, Elastic Observability và nhiều nền tảng tương thích khác.
-* Cho phép quan sát toàn bộ quá trình suy luận, truy xuất Memory và gọi Tool thay vì chỉ xem kết quả cuối cùng của AI Agent.
-* CloudWatch Logs Insights hỗ trợ truy vấn Log mạnh mẽ, giúp nhanh chóng xác định nguyên nhân sự cố và phân tích hành vi thực thi của Agent.
-* CloudWatch Alarm có thể tự động phát hiện các bất thường như độ trễ tăng cao, lượng Token tiêu thụ bất thường hoặc tỷ lệ lỗi vượt ngưỡng cho phép.
-* AgentCore Observability giúp rút ngắn đáng kể thời gian gỡ lỗi bằng cách cung cấp khả năng quan sát toàn bộ quá trình thực thi của AI Agent.
+---
 
-Theo AWS, các AI Agent trong môi trường Production thường gặp ba nhóm sự cố chính.
+## Kiến trúc tổng thể
 
-Nhóm đầu tiên là **Quality Failures**, xảy ra khi Agent hoàn thành yêu cầu nhưng trả về kết quả không chính xác hoặc gây hiểu nhầm. Những vấn đề phổ biến bao gồm Hallucination, suy luận sai, tính toán không chính xác hoặc lựa chọn Tool không phù hợp với yêu cầu. Do yêu cầu vẫn được xử lý thành công nên các hệ thống giám sát truyền thống thường không phát hiện được những lỗi này.
+Quy trình hoạt động của Web Search trong Amazon Bedrock AgentCore gồm các bước sau:
 
-Nhóm thứ hai là **Reliability Issues**, khiến AI Agent không thể hoàn thành quy trình xử lý. Một số ví dụ phổ biến là lỗi xác thực (401), lỗi phân quyền (403), dữ liệu đầu vào không hợp lệ (400), tài nguyên không tồn tại (404) hoặc mất Session/Context khiến Agent quên toàn bộ lịch sử hội thoại trước đó.
+1. Người dùng gửi yêu cầu đến AI Agent.
+2. AI Agent xác định rằng câu hỏi cần truy cập dữ liệu mới nhất từ Internet.
+3. Yêu cầu được chuyển đến **Amazon Bedrock AgentCore Gateway**.
+4. Gateway gọi **Managed Web Search Tool**.
+5. AWS tìm kiếm dữ liệu trong **Amazon Web Index** và trích xuất các nội dung phù hợp.
+6. Kết quả tìm kiếm được trả về AI Agent.
+7. AI Agent tổng hợp thông tin và sinh câu trả lời có kèm nguồn tham khảo (Citation).
 
-Nhóm cuối cùng là **Efficiency Problems**, chủ yếu ảnh hưởng đến hiệu năng và chi phí vận hành hơn là tính chính xác của kết quả. Những vấn đề thường gặp bao gồm độ trễ cao, lượng Token tiêu thụ quá lớn, gọi cùng một Tool nhiều lần hoặc rơi vào các vòng lặp suy luận (Infinite Reasoning Loop) khiến Agent liên tục tiêu tốn tài nguyên mà không tạo ra kết quả hữu ích.
+![Kiến trúc Web Search](/images/3-Blog/image.png)
 
-Một ví dụ thực tế được AWS chia sẻ là trường hợp AI Agent rơi vào **Infinite Reasoning Loop**. Do System Prompt yêu cầu Agent phải tiếp tục thực hiện phép tính cho đến khi đạt được "kết quả hoàn hảo", Agent đã liên tục gọi cùng một Calculator Tool mà không có bất kỳ điều kiện dừng nào.
+---
 
-Trong một phiên làm việc, Agent đã tạo ra hơn **177 Reasoning Spans**, tiêu thụ khoảng **266 nghìn Token** và thực hiện xử lý liên tục trong gần **85 giây**, nhưng hoàn toàn không phát sinh bất kỳ lỗi hệ thống nào. Đối với các công cụ giám sát truyền thống, phiên làm việc này vẫn được ghi nhận là xử lý thành công.
+## Công cụ Web Search (Web Search Tool)
 
-Thông qua Amazon Bedrock AgentCore Observability, nhóm phát triển đã sử dụng OpenTelemetry Traces kết hợp với CloudWatch Logs Insights để phân tích toàn bộ quá trình thực thi. Kết quả cho thấy nguyên nhân không nằm ở Calculator Tool mà xuất phát từ System Prompt được thiết kế chưa hợp lý, thiếu điều kiện dừng trong quá trình suy luận. Sau khi bổ sung giới hạn số bước suy luận và điều kiện kết thúc rõ ràng, vòng lặp vô hạn đã được loại bỏ hoàn toàn.
+Các nhà phát triển có thể kích hoạt Web Search rất dễ dàng bằng cách gắn **Managed Web Search Tool** vào AgentCore Gateway hiện có thông qua Connector sau:
 
-Ví dụ này cho thấy Execution Traces mang lại góc nhìn chi tiết hơn rất nhiều so với các Application Logs truyền thống. Thay vì chỉ biết rằng hệ thống xảy ra sự cố, các nhà phát triển có thể hiểu chính xác AI Agent đã suy luận như thế nào, đã lựa chọn Tool nào và tại bước nào quá trình thực thi bắt đầu đi chệch khỏi kết quả mong muốn.
+```python
+connectorId = "web-search"
+```
 
-Nhìn chung, Amazon Bedrock AgentCore Observability giúp doanh nghiệp vượt xa cách giám sát ứng dụng truyền thống bằng cách cung cấp khả năng quan sát toàn diện hành vi của AI Agent. Thông qua CloudWatch Dashboards, OpenTelemetry Traces, Structured Logs và CloudWatch Logs Insights, các nhóm phát triển có thể chủ động phát hiện sự cố, tối ưu quy trình suy luận, giảm chi phí vận hành và nâng cao độ ổn định của các AI Agent trong môi trường Production.
+Sau khi được cấu hình, AI Agent sẽ tự động quyết định thời điểm sử dụng Web Search khi gặp những câu hỏi yêu cầu dữ liệu theo thời gian thực mà mô hình không thể trả lời chỉ bằng dữ liệu huấn luyện.
 
-**Tham khảo:**
+---
 
-https://aws.amazon.com/blogs/machine-learning/debugging-production-agents-with-amazon-bedrock-agentcore-observability/
+## Chỉ mục Web của Amazon (Amazon Web Index)
+
+Khác với nhiều giải pháp AI hiện nay phải phụ thuộc vào các công cụ tìm kiếm của bên thứ ba, AWS xây dựng và vận hành **Amazon Web Index** riêng.
+
+Theo AWS, Amazon Web Index có những đặc điểm nổi bật sau:
+
+* Chứa hàng chục tỷ tài liệu trên Internet.
+* Dữ liệu được cập nhật liên tục chỉ trong vài phút.
+* Bao phủ phạm vi rộng trên Internet công cộng.
+* Được tối ưu riêng cho các bài toán AI Retrieval.
+
+Nhờ đó, AI Agent có thể truy cập những thông tin mới nhất với độ tin cậy cao mà không cần phụ thuộc vào các dịch vụ tìm kiếm bên ngoài.
+
+---
+
+## Trích xuất đoạn nội dung ngữ nghĩa (Semantic Snippet Extraction)
+
+Thay vì trả về toàn bộ nội dung của một trang web hoặc mã HTML gốc, Web Search chỉ trích xuất những đoạn văn bản liên quan nhất đến truy vấn của người dùng.
+
+Cách tiếp cận này mang lại nhiều lợi ích như:
+
+* Giảm số lượng Token cần xử lý.
+* Cải thiện chất lượng câu trả lời.
+* Tăng độ chính xác của quá trình Retrieval.
+* Loại bỏ các nội dung không liên quan trên trang web.
+
+Nhờ đó, AI Agent có thể tập trung vào những thông tin quan trọng nhất thay vì phải xử lý toàn bộ nội dung của trang.
+
+---
+
+## Đồ thị tri thức (Knowledge Graph)
+
+Bên cạnh dữ liệu Web thông thường, Web Search còn tích hợp **Knowledge Graph** để hỗ trợ các câu hỏi liên quan đến thực thể (Entity).
+
+Ví dụ:
+
+* Con người (People)
+* Tổ chức (Organizations)
+* Doanh nghiệp (Companies)
+* Địa điểm (Locations)
+
+Knowledge Graph cung cấp dữ liệu có cấu trúc, giúp AI Agent nâng cao độ chính xác, giảm hiện tượng Hallucination và cải thiện độ tin cậy của câu trả lời.
+
+---
+
+## Bảo mật
+
+Một trong những ưu điểm lớn của Amazon Bedrock AgentCore Web Search là kiến trúc ưu tiên bảo mật và quyền riêng tư.
+
+Toàn bộ truy vấn tìm kiếm được xử lý bên trong hạ tầng AWS thay vì chuyển tiếp đến các công cụ tìm kiếm bên ngoài.
+
+Quá trình xác thực được thực hiện thông qua **IAM Role** gắn với AgentCore Gateway, giúp đơn giản hóa việc quản lý quyền truy cập đồng thời đáp ứng các yêu cầu bảo mật của doanh nghiệp.
+
+---
+
+## Tích hợp với các AI Framework
+
+Web Search tuân theo tiêu chuẩn **Model Context Protocol (MCP)**.
+
+Nhờ đó, dịch vụ có thể tích hợp dễ dàng với nhiều AI Framework phổ biến như:
+
+* Strands
+* LangChain
+* LangGraph
+* CrewAI
+
+AI Agent sẽ tự động phát hiện các công cụ (Tools) được Gateway cung cấp và chủ động sử dụng Web Search khi cần truy cập thông tin theo thời gian thực.
+
+---
+
+## Chi phí
+
+Theo bảng giá do AWS công bố:
+
+* **7 USD cho mỗi 1.000 yêu cầu tìm kiếm (Search Requests).**
+
+Dịch vụ áp dụng mô hình **Pay-as-you-go**, cho phép doanh nghiệp chỉ thanh toán dựa trên số lượng yêu cầu thực tế mà hệ thống sử dụng.
+
+---
+
+## Kết luận
+
+Amazon Bedrock AgentCore Web Search giúp AI Agent vượt qua giới hạn của dữ liệu huấn luyện tĩnh bằng cách cung cấp khả năng truy cập thông tin mới nhất từ Internet theo thời gian thực.
+
+Thay vì phải tích hợp nhiều dịch vụ tìm kiếm khác nhau, quản lý API Key hoặc tự xây dựng hệ thống Retrieval riêng, các nhà phát triển chỉ cần cấu hình **Managed Web Search Tool**, trong khi AWS đảm nhiệm toàn bộ quá trình lập chỉ mục, xác thực, tìm kiếm và tối ưu kết quả.
+
+Đây là giải pháp phù hợp cho các AI Chatbot, AI Assistant, nền tảng nghiên cứu, ứng dụng tài chính, hệ thống tổng hợp tin tức và các giải pháp chăm sóc khách hàng cần khai thác dữ liệu luôn được cập nhật theo thời gian thực.
+
+---
+
+## Tham khảo
+
+**AWS Machine Learning Blog**
+
+**Introducing Web Search on Amazon Bedrock AgentCore**
+
+https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/

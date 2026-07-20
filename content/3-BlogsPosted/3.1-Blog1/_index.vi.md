@@ -5,150 +5,61 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
+# XÂY DỰNG TRÌNH CHỈNH SỬA HÌNH ẢNH KHÔNG MÁY CHỦ VỚI AMAZON BEDROCK AGENTCORE HARNESS
 
-# WEB SEARCH TRONG AMAZON BEDROCK AGENTCORE
+Bài viết này với mục đích chia sẻ và hướng dẫn cách xây dựng một trình chỉnh sửa hình ảnh không máy chủ, nơi người dùng tải ảnh lên, mô tả chỉnh sửa bằng tiếng Anh thông thường và nhận kết quả trong vài giây.
 
-Các mô hình AI hiện nay có khả năng xử lý ngôn ngữ rất tốt, tuy nhiên vẫn tồn tại một hạn chế lớn: chúng chỉ có thể trả lời dựa trên dữ liệu đã được huấn luyện. Khi người dùng đặt câu hỏi về những sự kiện vừa mới xảy ra như tin tức, giá cổ phiếu, tỷ giá tiền tệ hay các sản phẩm vừa được phát hành, AI Agent thường không thể đưa ra câu trả lời chính xác nếu không được kết nối với nguồn dữ liệu bên ngoài.
+Điểm đặc biệt của giải pháp là sử dụng **Amazon Bedrock AgentCore Harness** để đảm nhiệm toàn bộ quá trình điều phối AI Agent, bao gồm quản lý vòng lặp suy luận, lựa chọn công cụ, lưu trữ bộ nhớ hội thoại và cung cấp môi trường thực thi.
 
-Để giải quyết vấn đề này, AWS đã giới thiệu **Web Search trên Amazon Bedrock AgentCore**. Đây là một dịch vụ tìm kiếm web được AWS quản lý hoàn toàn, cho phép AI Agent truy cập thông tin mới nhất trên Internet mà không cần tích hợp các Search API của bên thứ ba.
+AgentCore Harness sẽ chạy agent trong một microVM có trạng thái và được cô lập, đồng thời tích hợp sẵn bộ nhớ, định tuyến công cụ và khả năng giám sát.
 
-## Những điểm nổi bật
+### Cách ứng dụng hoạt động
 
-* Cho phép AI Agent truy cập dữ liệu thời gian thực từ Internet.
-* Không cần tích hợp Google Search API, Bing Search API hoặc SerpAPI.
-* AWS quản lý toàn bộ quá trình tìm kiếm và xử lý dữ liệu.
-* Hỗ trợ chuẩn **Model Context Protocol (MCP)** giúp dễ dàng tích hợp với nhiều AI Framework.
-* Hoạt động thông qua **Amazon Bedrock AgentCore Gateway**.
-* Dữ liệu truy vấn được xử lý hoàn toàn trong hạ tầng AWS, tăng tính bảo mật.
-* Kết quả tìm kiếm được tối ưu dưới dạng **Semantic Snippet**, giúp AI chỉ nhận những đoạn nội dung liên quan nhất.
-* Hỗ trợ **Knowledge Graph** nhằm nâng cao độ chính xác đối với các câu hỏi về thực thể (Entity).
+AI Agent trong ứng dụng sử dụng **Claude Sonnet 4.6** để phân tích yêu cầu chỉnh sửa thành nhiều bước nhỏ. Sau đó, agent lựa chọn và gọi công cụ tương ứng với từng mô hình Stability AI để thực hiện chỉnh sửa ảnh.
 
-Tính năng này đặc biệt phù hợp với các hệ thống AI Chatbot, AI Assistant, Research Agent, News Agent hoặc các ứng dụng cần truy cập thông tin luôn được cập nhật theo thời gian thực.
+Khi ảnh đã được xử lý, một chương trình Python chạy trực tiếp trong microVM để thêm watermark. Thao tác này không cần mô hình AI suy luận nên không tiêu tốn token.
 
----
+### Những khả năng nổi bật
 
-## Kiến trúc hoạt động
+**1️⃣ Tạo AI Agent bằng cấu hình**
 
-Quá trình xử lý của Web Search diễn ra theo các bước sau:
+Agent được định nghĩa hoàn toàn thông qua các tham số API. Không cần tự viết mã điều phối, sử dụng framework riêng hoặc xây dựng container.
 
-1. Người dùng gửi câu hỏi đến AI Agent.
-2. AI Agent xác định cần dữ liệu mới ngoài mô hình huấn luyện.
-3. Agent gửi yêu cầu đến **Amazon Bedrock AgentCore Gateway**.
-4. Gateway sử dụng **Web Search Tool** để truy vấn Web Index của AWS.
-5. AWS tìm kiếm và trích xuất những đoạn thông tin phù hợp nhất.
-6. Kết quả được gửi lại cho AI Agent.
-7. AI Agent tổng hợp câu trả lời và hiển thị cho người dùng kèm nguồn tham khảo.
+**2️⃣ Chuyển đổi mô hình theo từng yêu cầu**
 
-![Kiến trúc Web Search](/images/3-Blogposted/architecture.png)
+Frontend sử dụng **Claude Haiku 4.5** cho các cuộc hội thoại đơn giản và **Claude Sonnet 4.6** cho những yêu cầu chỉnh sửa ảnh phức tạp.
 
----
+**3️⃣ Thay đổi persona mà không cần triển khai lại**
 
-## Web Search Tool
+Người dùng có thể lựa chọn các persona theo từng lĩnh vực. Mỗi persona sẽ cung cấp một system prompt phù hợp với lĩnh vực tương ứng mà không cần sửa hoặc triển khai lại toàn bộ ứng dụng.
 
-Việc cấu hình Web Search khá đơn giản. Nhà phát triển chỉ cần thêm một Web Search Tool vào Gateway bằng `connectorId = "web-search"`.
+**4️⃣ Lưu trữ lịch sử bằng AgentCore Memory**
 
-Sau khi được cấu hình, AI Agent sẽ tự động quyết định khi nào cần sử dụng Web Search để lấy dữ liệu mới nhất thay vì chỉ dựa vào kiến thức của mô hình.
+AgentCore Memory lưu lịch sử hội thoại trong 30 ngày. Nhờ đó, agent có thể tham chiếu đến các lần chỉnh sửa trước mà frontend không cần gửi lại toàn bộ nội dung trò chuyện.
 
+Session ID được lưu trong `localStorage` nên cuộc trò chuyện vẫn tiếp tục sau khi người dùng tải lại trang. Nếu dữ liệu trình duyệt bị xóa, frontend sẽ tạo phiên mới, nhưng lịch sử cũ vẫn có thể được truy xuất từ AgentCore thông qua **ListEvents API**.
 
----
+**5️⃣ Kết nối công cụ thông qua MCP**
 
-## Amazon Web Index
+Ba công cụ chỉnh sửa ảnh được xây dựng bằng **AWS Lambda** và cung cấp cho agent thông qua **AgentCore Gateway** cùng **Model Context Protocol (MCP)**.
 
-Khác với nhiều giải pháp sử dụng công cụ tìm kiếm của bên thứ ba, AWS xây dựng và vận hành **Web Index** của riêng mình.
+Agent sẽ dựa vào nội dung yêu cầu để tự lựa chọn đúng công cụ cần sử dụng.
 
-Theo AWS, Web Index có các đặc điểm:
+**6️⃣ Xử lý tác vụ không cần AI để tiết kiệm token**
 
-* Chứa hàng chục tỷ tài liệu trên Internet.
-* Nội dung được cập nhật liên tục chỉ sau vài phút.
-* Tối ưu cho các mô hình AI.
-* Bao phủ nhiều lĩnh vực và nguồn dữ liệu khác nhau.
+Sau mỗi lần chỉnh sửa, một chương trình Python được chạy trực tiếp trong microVM để thêm watermark. Vì đây là thao tác xử lý ảnh thông thường nên không cần mô hình suy luận và không phát sinh chi phí token.
 
-Nhờ đó AI Agent có thể truy xuất những thông tin mới nhất với độ chính xác cao hơn.
+### Kiến trúc hệ thống
 
----
+* Một giao diện người dùng **React** được lưu trữ trên **AWS Amplify**, nơi người dùng tải lên hình ảnh, vẽ mặt nạ và nhập hướng dẫn chỉnh sửa.
+* Một máy chủ proxy **AWS Lambda** hoạt động như một ranh giới bảo mật giữa thông tin xác thực trình duyệt và API của hệ thống, đồng thời kiểm soát các lời nhắc hệ thống nào được cho phép.
+* Một tác nhân **AgentCore** của Amazon Bedrock với **AgentCore Memory** để lưu trữ cuộc hội thoại.
+* Ba hàm **Lambda** công cụ gọi các mô hình nền tảng **Stability AI** thông qua Amazon Bedrock để tạo hình ảnh.
 
-## Semantic Snippet Extraction
+Hình dưới đây minh họa kiến trúc tổng quan của giải pháp, từ giao diện người dùng đến các thành phần AgentCore và công cụ xử lý ảnh trên AWS.
 
-Thay vì trả về toàn bộ nội dung của một trang web, Web Search sẽ chỉ trích xuất những đoạn văn bản có liên quan trực tiếp đến câu hỏi của người dùng.
+![Amazon Bedrock Architecture](/images/3-Blog/bedrock-agentcore-architecture.png)
 
-Cách tiếp cận này giúp:
+**Tham khảo:**
 
-* Giảm số lượng token mà mô hình phải xử lý.
-* Tăng tốc độ phản hồi.
-* Nâng cao độ chính xác.
-* Giảm lượng dữ liệu không cần thiết.
-
----
-
-## Knowledge Graph
-
-Bên cạnh việc tìm kiếm trên Web Index, Web Search còn hỗ trợ **Knowledge Graph**.
-
-Đối với các câu hỏi về:
-
-* Con người
-* Tổ chức
-* Địa điểm
-* Doanh nghiệp
-
-Knowledge Graph sẽ cung cấp dữ liệu có cấu trúc, giúp giảm hiện tượng **hallucination** và cải thiện độ tin cậy của câu trả lời.
-
----
-
-## Bảo mật
-
-Một ưu điểm đáng chú ý của Web Search trên Amazon Bedrock AgentCore là toàn bộ truy vấn đều được xử lý bên trong hạ tầng AWS.
-
-Điều này giúp:
-
-* Không gửi truy vấn đến Search Engine của bên thứ ba.
-* Đơn giản hóa việc quản lý API Key.
-* Tăng khả năng bảo mật dữ liệu.
-* Phù hợp với các doanh nghiệp có yêu cầu cao về quyền riêng tư.
-
-Quá trình xác thực được thực hiện thông qua IAM Role của AgentCore Gateway.
-
----
-
-## Khả năng tích hợp
-
-Web Search được xây dựng theo chuẩn **Model Context Protocol (MCP)** nên có thể tích hợp với nhiều framework AI phổ biến như:
-
-* Strands
-* LangChain
-* LangGraph
-* CrewAI
-
-AI Agent có thể tự động khám phá (Discover) Web Search Tool thông qua Gateway và sử dụng khi cần thiết mà không phải lập trình thêm nhiều logic xử lý.
-
----
-
-## Chi phí
-
-Theo AWS, Web Search được tính phí theo mô hình Pay-as-you-go.
-
-Giá hiện tại:
-
-* **7 USD cho mỗi 1.000 lượt tìm kiếm.**
-
-Điều này giúp doanh nghiệp chỉ phải trả chi phí dựa trên số lượng truy vấn thực tế.
-
----
-
-## Kết luận
-
-Amazon Bedrock AgentCore Web Search là một tính năng giúp AI Agent vượt qua giới hạn của dữ liệu huấn luyện bằng cách truy cập thông tin mới nhất từ Internet.
-
-Thay vì phải tự xây dựng hệ thống tích hợp Search API, xử lý dữ liệu và quản lý nhiều dịch vụ khác nhau, nhà phát triển chỉ cần cấu hình một Web Search Tool để AWS đảm nhận toàn bộ quá trình tìm kiếm, xác thực và tối ưu dữ liệu.
-
-Đây là một giải pháp phù hợp cho các ứng dụng AI cần dữ liệu thời gian thực như chatbot thông minh, trợ lý nghiên cứu, tổng hợp tin tức, phân tích thị trường và các hệ thống hỗ trợ khách hàng.
-
----
-
-## Tài liệu tham khảo
-
-**AWS Machine Learning Blog**
-
-Introducing Web Search on Amazon Bedrock AgentCore
-
-https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/
+https://aws.amazon.com/vi/blogs/machine-learning/build-a-serverless-image-editing-agent-with-amazon-bedrock-agentcore-harness/

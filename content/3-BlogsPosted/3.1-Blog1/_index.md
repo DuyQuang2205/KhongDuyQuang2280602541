@@ -1,153 +1,67 @@
 ---
+
 title: "Blog 1"
 date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
----
-
-
-# WEB SEARCH IN AMAZON BEDROCK AGENTCORE
-
-Large Language Models (LLMs) have become a core component of modern AI applications. However, one major limitation is that they can only answer questions based on the data available during training. When users ask about breaking news, current stock prices, newly released AI models, or recent AWS announcements, AI agents cannot provide accurate answers without access to external information.
-
-To solve this challenge, AWS introduced **Web Search on Amazon Bedrock AgentCore**, a fully managed web search capability that enables AI agents to retrieve real-time information from the public web without integrating third-party search services.
-
-## Key Features
-
-* Enables AI agents to access real-time information from the public web.
-* Eliminates the need for Google Search API, Bing Search API, or SerpAPI.
-* AWS manages the entire search infrastructure and result processing.
-* Supports **Model Context Protocol (MCP)** for seamless integration with AI frameworks.
-* Works through **Amazon Bedrock AgentCore Gateway**.
-* User queries remain entirely within AWS infrastructure, improving privacy and security.
-* Uses **Semantic Snippet Extraction** to return only the most relevant information.
-* Supports **Knowledge Graph** to improve factual accuracy for entity-based queries.
-
-This feature is especially useful for AI chatbots, virtual assistants, research agents, financial assistants, news summarizers, and any AI application that requires continuously updated information.
 
 ---
+# BUILDING A SERVERLESS IMAGE EDITING AGENT WITH AMAZON BEDROCK AGENTCORE HARNESS
 
-## Architecture
+This post shares and walks through how to build a serverless image editing agent, where users upload a photo, describe the edit in plain English, and get the result back in seconds.
 
-The overall workflow consists of the following steps:
+What makes this solution unique is the use of **Amazon Bedrock AgentCore Harness** to handle the entire AI agent orchestration process — including reasoning loop management, tool selection, conversation memory, and providing the execution environment.
 
-1. A user sends a request to an AI agent.
-2. The agent determines that current information is required.
-3. The request is forwarded to the Amazon Bedrock AgentCore Gateway.
-4. The Gateway invokes the managed Web Search Tool.
-5. AWS searches its Web Index and extracts relevant information.
-6. Search results are returned to the AI agent.
-7. The AI agent generates a grounded response with citations.
+AgentCore Harness runs the agent inside a stateful, isolated microVM, with memory, tool routing, and observability built in.
 
-![Architecture](/images/3-Blogposted/architecture.png)
+### How the application works
 
----
+The AI agent in the application uses **Claude Sonnet 4.6** to break down an editing request into smaller steps. The agent then selects and invokes the tool that corresponds to the appropriate Stability AI model to perform the edit.
 
-## Web Search Tool
+Once the image has been processed, a Python program runs directly inside the microVM to add a watermark. Since this step doesn't require AI reasoning, it consumes no tokens.
 
-Developers can enable Web Search simply by attaching a managed Web Search Tool to an existing AgentCore Gateway using the following connector:
+### Key capabilities
 
-```python
-connectorId = "web-search"
-```
+**1️⃣ Creating an AI agent through configuration**
 
-Once configured, AI agents can automatically decide when to use Web Search to answer questions requiring fresh information.
+The agent is defined entirely through API parameters — no need to write custom orchestration code, adopt a separate framework, or build a container.
 
----
+**2️⃣ Switching models per request**
 
-## Amazon Web Index
+The frontend uses **Claude Haiku 4.5** for simple conversations and **Claude Sonnet 4.6** for complex image editing requests.
 
-Unlike many solutions that rely on third-party search providers, AWS maintains its own **Web Index**.
+**3️⃣ Changing persona without redeploying**
 
-According to AWS, this index:
+Users can choose from domain-specific personas. Each persona provides a system prompt tailored to its domain, without needing to modify or redeploy the entire application.
 
-* Contains tens of billions of web documents.
-* Is continuously updated within minutes.
-* Provides broad coverage across the public Internet.
-* Is optimized specifically for AI retrieval.
+**4️⃣ Storing history with AgentCore Memory**
 
-This enables AI agents to access more recent and reliable information.
+AgentCore Memory retains conversation history for 30 days. This lets the agent reference previous edits without the frontend having to resend the entire conversation.
 
----
+The session ID is stored in `localStorage`, so the conversation continues even after the user reloads the page. If browser data is cleared, the frontend creates a new session, but the previous history can still be retrieved from AgentCore through the **ListEvents API**.
 
-## Semantic Snippet Extraction
+**5️⃣ Connecting tools through MCP**
 
-Instead of returning raw HTML or an entire web page, Web Search extracts only the most relevant passages related to the user's query.
+Three image editing tools are built with **AWS Lambda** and exposed to the agent through **AgentCore Gateway** and the **Model Context Protocol (MCP)**.
 
-This approach provides several advantages:
+The agent decides which tool to use based on the content of the request.
 
-* Reduces token consumption.
-* Improves response quality.
-* Increases retrieval accuracy.
-* Removes unnecessary page content.
+**6️⃣ Handling non-AI tasks to save tokens**
 
----
+After each edit, a Python program runs directly inside the microVM to add a watermark. Since this is a standard image-processing operation, it doesn't require a reasoning model and incurs no token cost.
 
-## Knowledge Graph
+### System architecture
 
-Web Search also leverages an integrated **Knowledge Graph** for entity-based questions.
+* A **React** frontend hosted on **AWS Amplify**, where users upload images, draw a mask, and enter editing instructions.
+* An **AWS Lambda** proxy server that acts as a security boundary between browser credentials and the system's API, while also controlling which system prompts are allowed.
+* An **Amazon Bedrock AgentCore** agent with **AgentCore Memory** for storing the conversation.
+* Three **Lambda** tool functions that call **Stability AI** foundation models through Amazon Bedrock to generate the images.
 
-For queries about:
+The diagram below illustrates the overall architecture of the solution, from the user interface to the AgentCore components and image-processing tools on AWS.
 
-* People
-* Organizations
-* Companies
-* Locations
+![Amazon Bedrock Architecture](/images/3-Blog/bedrock-agentcore-architecture.png)
 
-the Knowledge Graph provides structured factual information, helping reduce hallucinations and improve response reliability.
+**Reference:**
 
----
-
-## Security
-
-One of the major advantages of Amazon Bedrock AgentCore Web Search is its privacy-first architecture.
-
-All search requests remain inside AWS infrastructure instead of being forwarded to external search engines.
-
-Authentication is handled through IAM Roles attached to the AgentCore Gateway, simplifying credential management while improving enterprise security.
-
----
-
-## Integration
-
-Web Search follows the **Model Context Protocol (MCP)** standard.
-
-It can be integrated with popular AI frameworks including:
-
-* Strands
-* LangChain
-* LangGraph
-* CrewAI
-
-The AI agent automatically discovers available tools from the Gateway and invokes Web Search whenever real-time information is required.
-
----
-
-## Pricing
-
-According to AWS pricing:
-
-* **USD $7 per 1,000 search requests**
-
-The service follows a pay-as-you-go pricing model, allowing customers to pay only for actual usage.
-
----
-
-## Conclusion
-
-Amazon Bedrock AgentCore Web Search enables AI agents to overcome the limitations of static training data by providing secure access to real-time web information.
-
-Instead of integrating multiple third-party search services, managing API keys, or building custom retrieval pipelines, developers only need to configure a managed Web Search Tool while AWS handles indexing, authentication, retrieval, and result optimization.
-
-This feature is an excellent choice for intelligent chatbots, AI assistants, research platforms, financial applications, news summarization systems, and customer support solutions that require continuously updated information.
-
----
-
-## References
-
-**AWS Machine Learning Blog**
-
-Introducing Web Search on Amazon Bedrock AgentCore
-
-https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/
+https://aws.amazon.com/vi/blogs/machine-learning/build-a-serverless-image-editing-agent-with-amazon-bedrock-agentcore-harness/

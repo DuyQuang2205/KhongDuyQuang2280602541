@@ -1,45 +1,83 @@
 ---
-
 title: "Blog 2"
 date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
-
 ---
-# OPTIMIZING AI COSTS WITH AMAZON BEDROCK
 
-As Generative AI applications continue to expand across different industries, managing AI infrastructure costs has become one of the biggest challenges for organizations. During the early development phase, using a single foundation model is often sufficient because the workload is relatively small. However, as applications move into production and begin serving thousands of requests every day, AI expenses can increase significantly and eventually become a major operational cost.
+# OPTIMIZING NAT GATEWAY COSTS ON AWS
 
-Another common challenge is **vendor lock-in**. When an application depends entirely on a single AI provider, organizations have limited flexibility to evaluate newer models, optimize pricing, or select different models for different business scenarios. As AI technology continues to evolve rapidly, relying on one provider can make future optimization more difficult.
+Hello everyone 👋
 
-Amazon Bedrock addresses these challenges by providing a unified platform that allows developers to access multiple leading foundation models through a single API. Instead of selecting one model for every workload, organizations can choose the most suitable model for each task based on performance, latency, reasoning capability, and operational cost. This multi-model approach enables better resource utilization while maintaining application quality and scalability.
+If you've worked with AWS and deployed systems inside a VPC, you've almost certainly heard of **NAT Gateway**.
 
-Key points to know:
+### What is a NAT Gateway?
 
-* Amazon Bedrock provides access to multiple foundation models such as Amazon Nova, Anthropic Claude, Meta Llama, Cohere Command, Amazon Titan, and many others through a unified API.
-* Different AI workloads can utilize different foundation models, allowing developers to optimize reasoning capability, latency, throughput, and infrastructure cost independently.
-* Prompt Caching minimizes repeated prompt processing, reducing token consumption while improving response latency for frequently executed prompts.
-* Intelligent Prompt Routing automatically directs requests to the most cost-effective foundation model without requiring changes to application logic.
-* Prompt Optimization helps refine prompts for individual models, improving output quality while minimizing unnecessary token usage.
-* Multi-model architecture reduces vendor lock-in, making it easier to adopt newly released foundation models without redesigning the entire application.
-* Organizations can optimize AI infrastructure costs while maintaining high availability, application quality, and long-term scalability.
+When we place EC2 instances or applications inside a **Private Subnet**, they don't have a Public IP, so they can't reach the Internet directly. However, they often still need outbound access — to update the operating system, download libraries from npm or Maven, call third-party APIs, pull Docker images, or connect to other external services.
 
-One practical example highlighted by AWS is **InterWiz**, an AI-powered recruitment platform that conducts thousands of AI-assisted interviews every month. Initially, the platform relied primarily on a single foundation model, resulting in increasing operational costs, higher response latency, and limited architectural flexibility as the business scaled.
+This is exactly where **NAT Gateway** comes in. It's a fully managed AWS service that lets private resources initiate outbound Internet connections safely.
 
-To address these challenges, InterWiz migrated its AI workloads to Amazon Bedrock using a multi-model architecture. Instead of assigning every task to one foundation model, different models were selected according to their individual strengths. Anthropic Claude 3.5 Sonnet was used for reasoning-intensive tasks such as intelligent question generation, while Meta Llama 3.3 70B handled real-time interview interactions and candidate evaluations with lower latency and lower operational cost.
+### The problem: NAT Gateway can burn through your budget
 
-During the migration process, the engineering team also optimized prompts for each foundation model, applied Prompt Caching to reduce repeated processing, and leveraged Intelligent Prompt Routing to automatically select the most cost-efficient model for different workloads. This systematic optimization enabled the platform to significantly improve both technical performance and overall business efficiency.
+AWS charges for NAT Gateway based on three main factors:
 
-As a result, InterWiz successfully achieved several measurable improvements:
+* **Uptime** — the NAT Gateway runs 24/7 whether or not there's traffic.
+* **Data processed** — billed per GB.
+* **Data transfer fees** — incurred when data crosses different AZs.
 
-* Reduced AI infrastructure costs by **90%**.
-* Improved response latency by **55%** (from approximately 850 ms to 450 ms).
-* Maintained **99.9%** service availability with a multi-model architecture and automatic failover capability.
-* Increased architectural flexibility, allowing the platform to evaluate and adopt newly released foundation models without major infrastructure changes.
+**Example:**
 
-This case study demonstrates that optimizing AI infrastructure is not simply about selecting the most powerful foundation model. Instead, choosing the right model for each workload can provide a much better balance between performance, operational cost, scalability, and long-term maintainability. Amazon Bedrock enables organizations to implement this strategy through its unified API and growing ecosystem of foundation models.
+Suppose your system spans **3 Availability Zones**. AZ1 has 1 NAT Gateway plus 1,000 GB of traffic per month. AZ2 and AZ3 are the same.
 
-![Amazon Bedrock Architecture](/images/3-Blogposted/bedrock-architecture.png)
+The cost for each AZ is calculated as follows:
 
-https://aws.amazon.com/blogs/apn/how-interwiz-reduced-ai-costs-by-90-with-amazon-bedrock/
+* Hourly fee: 0.045 × 730 hours = **$32.85**.
+* Data processing fee: 0.045 × 1,000 GB = **$45**.
+* **Total per AZ: $77.85/month.**
+
+Combined cost across three AZs: 77.85 × 3 = **$233.55/month**.
+
+So is there any way to bring this number down?
+
+### Solution 1: Identify the traffic
+
+Before optimizing, you need to know where the data is actually going. Questions to answer include:
+
+* Which EC2 instance generates the most traffic?
+* Does the traffic go out to the Internet, or is it only reaching AWS services?
+* How much traffic goes to S3?
+* Are there any unused NAT Gateways?
+
+Tools for this analysis include:
+
+* **Amazon CloudWatch** to track metrics such as `BytesInFromSource`, `BytesOutToDestination`, and `ConnectionAttemptCount`.
+* **VPC Flow Logs** to log detailed traffic in and out of the VPC.
+* **Amazon S3** to store the VPC Flow Logs.
+* **Amazon Athena** to query the logs with SQL and find the "top talkers".
+
+**Example analysis:** after analyzing VPC Flow Logs, you find that **50% of traffic goes to Amazon S3**, 30% calls external APIs, 15% downloads packages and updates, and 5% goes to other services.
+
+### Solution 2: Use an S3 Gateway Endpoint
+
+In the example above, 50% of traffic goes to S3. This data doesn't necessarily need to pass through the NAT Gateway.
+
+**Without an S3 Endpoint:** Private EC2 → NAT Gateway → Internet → S3.
+
+**With an S3 Endpoint:** Private EC2 → S3 Gateway Endpoint → S3, entirely within AWS's internal network — no NAT Gateway or public Internet involved.
+
+**Cost after adding the S3 Endpoint:** assuming 50% of traffic no longer needs the NAT Gateway, each AZ is left with 500 GB.
+
+* NAT hourly fee: **$32.85**.
+* Processing fee for 500 GB: 0.045 × 500 = **$22.50**.
+* **Total per AZ: $55.35/month.**
+
+Total for three AZs: 55.35 × 3 = **$166.05/month**.
+
+Compared to three NAT Gateways without an endpoint ($233.55/month), this saves **$67.50/month**.
+
+![AWS NAT Gateway Cost Optimization](/images/3-Blog/aws_NAT.png)
+
+**Reference:**
+
+https://vegacloud.medium.com/aws-nat-gateway-optimization-bd5f7d2da8a8
