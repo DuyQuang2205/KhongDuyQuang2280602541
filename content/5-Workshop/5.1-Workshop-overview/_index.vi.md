@@ -34,4 +34,4 @@ Trong workshop này, bạn sẽ triển khai ứng dụng PetShop lên AWS theo 
 | AWS IAM | IAM Role cho EC2 truy cập S3 và Session Manager |
 | AWS Systems Manager | Truy cập shell các instance private qua trình duyệt |
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram01.png)
+![overview](/images/5-Workshop/5.1-Workshop-overview/diagram01.png?v=20260720a)

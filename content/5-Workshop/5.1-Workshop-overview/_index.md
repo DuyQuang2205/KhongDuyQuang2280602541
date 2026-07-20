@@ -34,4 +34,4 @@ In this workshop, you will deploy the PetShop application onto AWS using a produ
 | AWS IAM | EC2 instance role for S3 access and Session Manager |
 | AWS Systems Manager | Browser-based shell access to private instances |
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram01.png)
+![overview](/images/5-Workshop/5.1-Workshop-overview/diagram01.png?v=20260720a)
