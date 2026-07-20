@@ -18,7 +18,7 @@ Bạn cũng sẽ tạo một **S3 Gateway Endpoint**, cho phép các instance tr
 
 Thay vì tạo thủ công từng thành phần, chúng ta dùng wizard **"VPC and more"** — công cụ tự động tạo VPC, subnet, route table, Internet Gateway, NAT Gateway và S3 endpoint chỉ trong một bước.
 
-![network](/images/5-Workshop/5.3-VPC/network-diagram01.png)
+![network](/images/5-Workshop/5.3-VPC/network-diagram01.png?v=20260721a)
 
 #### Nội dung
 

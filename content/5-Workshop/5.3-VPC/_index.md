@@ -18,7 +18,7 @@ You will also create an **S3 Gateway Endpoint**, allowing instances in the priva
 
 Instead of creating each component manually, we use the **"VPC and more"** wizard, which provisions the VPC, subnets, route tables, Internet Gateway, NAT Gateway and S3 endpoint in a single step.
 
-![network](/images/5-Workshop/5.3-VPC/network-diagram01.png)
+![network](/images/5-Workshop/5.3-VPC/network-diagram01.png?v=20260721a)
 
 #### Content
 
