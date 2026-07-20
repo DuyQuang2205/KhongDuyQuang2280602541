@@ -35,7 +35,7 @@ The AWS architecture improves application availability, security, and scalabilit
 
 The proposed architecture follows AWS best practices for web applications. Incoming requests are resolved by Amazon Route 53 and accelerated through Amazon CloudFront. AWS WAF filters malicious traffic before requests reach the Application Load Balancer. The load balancer distributes requests to multiple EC2 instances deployed inside private subnets and managed by an Auto Scaling Group. Application data is stored in Amazon RDS, while product images are uploaded directly to Amazon S3. Private EC2 instances access external services through a NAT Gateway, and Amazon CloudWatch provides centralized monitoring and logging.
 
-![PetCare Shop Architecture](/images/2-Proposal/petcare_architecture.png?v=20260720a)
+![PetCare Shop Architecture](/images/2-Proposal/petcare_architecture.png?v=20260720b)
 
 ### AWS Services Used
 

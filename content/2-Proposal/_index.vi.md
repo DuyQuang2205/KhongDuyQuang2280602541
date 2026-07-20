@@ -39,7 +39,7 @@ Hệ thống được xây dựng theo mô hình kiến trúc Web Application tr
 
 Application Load Balancer phân phối lưu lượng đến nhiều máy chủ Amazon EC2 được triển khai trong Private Subnet và quản lý bởi Auto Scaling Group. Dữ liệu của hệ thống được lưu trên Amazon RDS, trong khi hình ảnh sản phẩm và các tệp tải lên được lưu trên Amazon S3. Các EC2 truy cập Internet thông qua NAT Gateway khi cần thiết và Amazon CloudWatch được sử dụng để theo dõi hiệu năng, nhật ký và trạng thái hoạt động của toàn bộ hệ thống.
 
-![PetCare Shop Architecture](/images/2-Proposal/petcare_architecture.png?v=20260720a)
+![PetCare Shop Architecture](/images/2-Proposal/petcare_architecture.png?v=20260720b)
 
 ### Dịch vụ AWS sử dụng
 
